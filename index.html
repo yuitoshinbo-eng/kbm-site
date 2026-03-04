@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>株式会社KBM | 北陸No.1 大規模修繕工事・リニューアル・リノベーション</title>
+  <meta name="google-site-verification" content="kraQySds0JXq73ihSeO7qyeOO3RKFj5nXSGJEL1yIok">
+  <meta name="description" content="北陸エリア大規模修繕施工頭数No.1。創業56年の株式会社KBMは、石川・富山・福井を中心に外壁・防水・設備改修工事を提供。10年アフター保証。平均年収700万円、採用情報も公開中。">
+  <meta name="keywords" content="大規模修繕,北陸,KBM,石川,金沢,外壁塗装,防水工事,リノベーション,採用">
+  <meta property="og:title" content="株式会社KBM | 北陸No.1 大規模修繕工事">
+  <meta property="og:description" content="北陸エリア大規模修繕施工頭数No.1。創業56年、平均年収700万円。採用情報公開中。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://www.kbmgroup.co.jp/">
+  <link rel="canonical" href="http://www.kbmgroup.co.jp/">
+  <link rel="alternate" media="only screen and (max-width:767px)" href="http://www.kbmgroup.co.jp/sp.html">
+  <!-- モバイル判定リダイレクト -->
+  <script>
+    (function(){
+      var ua = navigator.userAgent;
+      var isMobile = /iPhone|Android.*Mobile|Windows Phone/i.test(ua);
+      if (isMobile) { window.location.replace('/sp.html'); }
+    })();
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0d1b2a;
+      --deep-blue: #162940;
+      --accent: #c8a96e;
+      --accent-light: #e8c98e;
+      --white: #f5f2ec;
+      --gray: #8a8a8a;
+      --light-bg: #f0ede6;
+      --border: #d4c9b0;
+      --gold: #e6b84a;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { font-family:'Noto Sans JP',sans-serif; background:var(--white); color:var(--navy); overflow-x:hidden; }
+
+    /* NAV */
+    nav {
+      position:fixed; top:0; left:0; right:0; z-index:100;
+      background:rgba(13,27,42,0.97); backdrop-filter:blur(12px);
+      display:flex; align-items:center; justify-content:space-between;
+      padding:0 5%; height:70px;
+      border-bottom:1px solid rgba(200,169,110,0.3);
+    }
+    .nav-logo { font-family:'Bebas Neue',sans-serif; font-size:2rem; color:var(--accent); letter-spacing:4px; }
+    .nav-logo span {
+      font-family:'Noto Sans JP',sans-serif; font-size:0.6rem; font-weight:300;
+      color:var(--white); display:block; letter-spacing:2px; margin-top:-6px;
+    }
+    .nav-links { display:flex; gap:2rem; list-style:none; }
+    .nav-links a { color:rgba(245,242,236,0.8); text-decoration:none; font-size:0.75rem; letter-spacing:1.5px; transition:color 0.3s; font-weight:300; }
+    .nav-links a:hover { color:var(--accent); }
+    .nav-cta { background:var(--accent) !important; color:var(--navy) !important; padding:8px 20px; font-weight:700 !important; }
+
+    /* HERO */
+    .hero { height:100vh; background:var(--navy); position:relative; display:flex; align-items:center; overflow:hidden; }
+    .hero-bg {
+      position:absolute; inset:0;
+      background:
+        linear-gradient(135deg, rgba(13,27,42,0.93) 0%, rgba(13,27,42,0.6) 55%, rgba(13,27,42,0.88) 100%),
+        url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&q=80') center/cover no-repeat;
+    }
+    .hero-grid {
+      position:absolute; inset:0;
+      background-image:linear-gradient(rgba(200,169,110,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(200,169,110,0.04) 1px,transparent 1px);
+      background-size:80px 80px;
+    }
+    .hero-badge {
+      position:absolute; top:120px; right:6%;
+      background:var(--gold); color:var(--navy);
+      width:165px; height:165px; border-radius:50%;
+      display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;
+      animation:badgePulse 3s ease-in-out infinite, fadeIn 1s 0.8s ease both;
+      box-shadow:0 0 0 8px rgba(230,184,74,0.2),0 0 0 18px rgba(230,184,74,0.08);
+      z-index:3;
+    }
+    .hero-badge .b-no { font-family:'Bebas Neue',sans-serif; font-size:3.4rem; line-height:1; }
+    .hero-badge .b-area { font-size:0.65rem; font-weight:700; letter-spacing:2px; margin-top:2px; }
+    .hero-badge .b-sub { font-size:0.56rem; font-weight:600; margin-top:4px; line-height:1.4; }
+    @keyframes badgePulse {
+      0%,100%{box-shadow:0 0 0 8px rgba(230,184,74,0.2),0 0 0 18px rgba(230,184,74,0.08);}
+      50%{box-shadow:0 0 0 14px rgba(230,184,74,0.28),0 0 0 30px rgba(230,184,74,0.1);}
+    }
+    .hero-content { position:relative; z-index:2; padding:0 8%; max-width:860px; }
+    .hero-eyebrow { font-size:0.72rem; letter-spacing:5px; color:var(--accent); margin-bottom:0.8rem; font-weight:400; animation:fadeUp 0.8s ease both; }
+    .hero-no1-tag {
+      display:inline-block; background:var(--gold); color:var(--navy);
+      font-size:0.72rem; font-weight:700; padding:5px 16px; letter-spacing:2px;
+      margin-bottom:1.2rem; animation:fadeUp 0.8s 0.1s ease both;
+    }
+    .hero-title {
+      font-family:'Noto Serif JP',serif; font-size:clamp(2.2rem,5.5vw,4.6rem);
+      font-weight:700; color:var(--white); line-height:1.22; margin-bottom:1.5rem;
+      animation:fadeUp 0.8s 0.2s ease both;
+    }
+    .hero-title em { font-style:normal; color:var(--accent); }
+    .hero-sub { font-size:0.95rem; color:rgba(245,242,236,0.65); line-height:2; max-width:520px; margin-bottom:2.5rem; font-weight:300; animation:fadeUp 0.8s 0.35s ease both; }
+    .hero-buttons { display:flex; gap:1rem; flex-wrap:wrap; animation:fadeUp 0.8s 0.5s ease both; }
+    .btn-primary { background:var(--accent); color:var(--navy); padding:15px 38px; font-size:0.85rem; font-weight:600; letter-spacing:1px; text-decoration:none; border:2px solid var(--accent); transition:all 0.3s; }
+    .btn-primary:hover { background:transparent; color:var(--accent); }
+    .btn-secondary { background:transparent; color:var(--white); padding:15px 38px; font-size:0.85rem; font-weight:300; letter-spacing:1px; text-decoration:none; border:2px solid rgba(245,242,236,0.4); transition:all 0.3s; }
+    .btn-secondary:hover { border-color:var(--accent); color:var(--accent); }
+    .btn-gold { background:var(--gold); color:var(--navy); padding:15px 38px; font-size:0.85rem; font-weight:700; letter-spacing:1px; text-decoration:none; border:2px solid var(--gold); transition:all 0.3s; }
+    .btn-gold:hover { background:transparent; color:var(--gold); }
+    .hero-scroll { position:absolute; bottom:2.5rem; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:8px; color:rgba(245,242,236,0.4); font-size:0.65rem; letter-spacing:3px; animation:fadeIn 1.5s 1.2s ease both; }
+    .scroll-line { width:1px; height:50px; background:linear-gradient(to bottom,var(--accent),transparent); animation:scrollPulse 2s infinite; }
+
+    /* NO.1 BANNER */
+    .no1-banner { background:var(--gold); color:var(--navy); text-align:center; padding:1.2rem 5%; font-size:0.9rem; font-weight:700; letter-spacing:3px; position:relative; overflow:hidden; }
+    .no1-banner::before,.no1-banner::after { content:'★'; position:absolute; top:50%; transform:translateY(-50%); font-size:1.2rem; opacity:0.4; }
+    .no1-banner::before { left:3%; }
+    .no1-banner::after { right:3%; }
+
+    /* STATS */
+    .stats { background:var(--deep-blue); padding:3.5rem 8%; display:grid; grid-template-columns:repeat(5,1fr); gap:0; border-top:1px solid rgba(200,169,110,0.2); }
+    .stat-item { text-align:center; padding:1.8rem 1rem; border-right:1px solid rgba(200,169,110,0.15); position:relative; }
+    .stat-item:last-child { border-right:none; }
+    .stat-item.hl { background:rgba(230,184,74,0.07); }
+    .stat-item.hl::before { content:'No.1'; position:absolute; top:0.6rem; left:50%; transform:translateX(-50%); background:var(--gold); color:var(--navy); font-size:0.55rem; font-weight:700; padding:2px 8px; letter-spacing:1px; }
+    .stat-num { font-family:'Bebas Neue',sans-serif; font-size:3.2rem; color:var(--accent); line-height:1; }
+    .stat-item.hl .stat-num { color:var(--gold); font-size:3.6rem; }
+    .stat-unit { font-size:1rem; color:var(--accent-light); }
+    .stat-label { font-size:0.68rem; color:rgba(245,242,236,0.5); letter-spacing:1.5px; margin-top:0.5rem; line-height:1.5; }
+
+    /* SECTION */
+    section { padding:7rem 8%; }
+    .section-tag { font-size:0.68rem; letter-spacing:5px; color:var(--accent); text-transform:uppercase; margin-bottom:1rem; font-weight:400; }
+    .section-title { font-family:'Noto Serif JP',serif; font-size:clamp(1.8rem,3.5vw,2.8rem); font-weight:600; line-height:1.35; margin-bottom:1.5rem; }
+    .section-lead { font-size:0.95rem; line-height:2; color:#444; font-weight:300; max-width:640px; }
+    .divider { width:60px; height:3px; background:var(--accent); margin:1.5rem 0; }
+
+    /* NO.1 SECTION */
+    .no1-sec { background:var(--navy); padding:7rem 8%; position:relative; overflow:hidden; }
+    .no1-sec::before { content:'No.1'; position:absolute; right:-2%; top:50%; transform:translateY(-50%); font-family:'Bebas Neue',sans-serif; font-size:20rem; color:rgba(230,184,74,0.04); line-height:1; pointer-events:none; }
+    .no1-sec .section-tag { color:var(--gold); }
+    .no1-sec .section-title { color:var(--white); }
+    .no1-sec .divider { background:var(--gold); }
+    .no1-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; margin-top:4rem; align-items:center; }
+    .no1-big { font-family:'Bebas Neue',sans-serif; font-size:clamp(5rem,14vw,12rem); color:var(--gold); line-height:0.9; display:block; }
+    .no1-sub { font-family:'Noto Serif JP',serif; font-size:clamp(1.2rem,2vw,1.8rem); color:var(--white); margin-top:1rem; font-weight:600; }
+    .no1-cap { font-size:0.78rem; color:rgba(245,242,236,0.4); margin-top:0.5rem; }
+    .no1-points { display:flex; flex-direction:column; gap:1.5rem; }
+    .no1-point { background:rgba(255,255,255,0.05); border-left:4px solid var(--gold); padding:1.2rem 1.5rem; }
+    .no1-point h4 { font-size:1rem; color:var(--gold); font-weight:600; margin-bottom:0.4rem; }
+    .no1-point p { font-size:0.82rem; color:rgba(245,242,236,0.65); line-height:1.8; font-weight:300; }
+
+    /* ABOUT */
+    .about { background:var(--light-bg); display:grid; grid-template-columns:1fr 1fr; gap:6rem; align-items:center; padding:7rem 8%; }
+    .about-image { position:relative; aspect-ratio:4/5; }
+    .about-image img { width:100%; height:100%; object-fit:cover; position:relative; z-index:1; }
+    .about-image::before { content:''; position:absolute; top:-20px; left:-20px; right:20px; bottom:20px; border:2px solid var(--accent); z-index:0; }
+    .about-badge { position:absolute; bottom:-20px; right:-20px; background:var(--navy); color:var(--accent); padding:1.5rem; z-index:2; text-align:center; font-family:'Bebas Neue',sans-serif; font-size:2rem; line-height:1; }
+    .about-badge small { display:block; font-family:'Noto Sans JP',sans-serif; font-size:0.6rem; color:rgba(245,242,236,0.6); letter-spacing:2px; font-weight:300; margin-top:4px; }
+    .founding-badge { display:inline-flex; align-items:center; gap:1rem; background:var(--navy); color:var(--white); padding:1rem 1.5rem; margin:1.5rem 0; }
+    .founding-num { font-family:'Bebas Neue',sans-serif; font-size:3rem; color:var(--gold); line-height:1; }
+    .founding-text { font-size:0.75rem; line-height:1.6; }
+
+    /* SERVICES */
+    .services { background:var(--white); }
+    .services-header { display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:4rem; }
+    .services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5px; background:var(--border); }
+    .service-card { background:var(--white); padding:3rem 2.5rem; position:relative; overflow:hidden; transition:all 0.4s; }
+    .service-card::before { content:''; position:absolute; bottom:0; left:0; right:0; height:3px; background:var(--accent); transform:scaleX(0); transition:transform 0.4s; }
+    .service-card:hover::before { transform:scaleX(1); }
+    .service-card:hover { background:var(--navy); }
+    .service-num { font-family:'Bebas Neue',sans-serif; font-size:4rem; color:rgba(200,169,110,0.15); line-height:1; margin-bottom:1.5rem; transition:color 0.4s; }
+    .service-card:hover .service-num { color:var(--accent); }
+    .service-icon { font-size:2rem; margin-bottom:1rem; }
+    .service-title { font-family:'Noto Serif JP',serif; font-size:1.15rem; font-weight:600; margin-bottom:1rem; transition:color 0.4s; color:var(--navy); }
+    .service-card:hover .service-title { color:var(--white); }
+    .service-text { font-size:0.82rem; line-height:1.9; color:#555; transition:color 0.4s; font-weight:300; }
+    .service-card:hover .service-text { color:rgba(245,242,236,0.7); }
+
+    /* PROCESS */
+    .process { background:var(--deep-blue); color:var(--white); padding:7rem 8%; }
+    .process .section-tag { color:var(--accent); }
+    .process .section-title { color:var(--white); }
+    .process .section-lead { color:rgba(245,242,236,0.6); }
+    .process .divider { background:var(--accent); }
+    .process-steps { display:grid; grid-template-columns:repeat(5,1fr); gap:0; margin-top:5rem; position:relative; }
+    .process-steps::before { content:''; position:absolute; top:30px; left:10%; right:10%; height:1px; background:linear-gradient(to right,var(--accent),rgba(200,169,110,0.3),var(--accent)); }
+    .process-step { text-align:center; padding:0 1rem; }
+    .step-circle { width:60px; height:60px; border:2px solid var(--accent); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 2rem; background:var(--deep-blue); position:relative; z-index:1; }
+    .step-num { font-family:'Bebas Neue',sans-serif; font-size:1.3rem; color:var(--accent); }
+    .step-title { font-size:0.85rem; font-weight:500; margin-bottom:0.75rem; color:var(--white); }
+    .step-text { font-size:0.72rem; color:rgba(245,242,236,0.5); line-height:1.8; font-weight:300; }
+
+    /* REPAIR */
+    .repair { background:var(--light-bg); padding:7rem 8%; }
+    .repair-grid { display:grid; grid-template-columns:1fr 1fr; gap:3rem; margin-top:4rem; }
+    .repair-card { background:var(--white); padding:3rem; border-left:4px solid var(--accent); position:relative; }
+    .repair-badge { position:absolute; top:-1px; left:-4px; background:var(--accent); color:var(--navy); font-size:0.65rem; padding:4px 12px; letter-spacing:2px; font-weight:600; }
+    .repair-card h3 { font-family:'Noto Serif JP',serif; font-size:1.2rem; margin:1.5rem 0 1rem; font-weight:600; }
+    .repair-list { list-style:none; }
+    .repair-list li { font-size:0.82rem; padding:0.6rem 0; border-bottom:1px solid var(--border); color:#444; display:flex; align-items:center; gap:0.75rem; font-weight:300; }
+    .repair-list li::before { content:'▶'; font-size:0.5rem; color:var(--accent); }
+
+    /* AFTER */
+    .after { background:var(--deep-blue); color:var(--white); padding:7rem 8%; display:grid; grid-template-columns:1fr 1fr; gap:6rem; align-items:center; }
+    .after .section-title { color:var(--white); }
+    .after .section-lead { color:rgba(245,242,236,0.65); }
+    .after .divider { background:var(--accent); }
+    .timeline { position:relative; padding-left:3rem; }
+    .timeline::before { content:''; position:absolute; left:0; top:0; bottom:0; width:1px; background:linear-gradient(to bottom,var(--accent),rgba(200,169,110,0.1)); }
+    .tl-item { position:relative; margin-bottom:2rem; }
+    .tl-item::before { content:''; position:absolute; left:-3rem; top:6px; width:10px; height:10px; border:2px solid var(--accent); border-radius:50%; background:var(--deep-blue); transform:translateX(-50%); }
+    .tl-year { font-family:'Bebas Neue',sans-serif; font-size:1.5rem; color:var(--accent); line-height:1; margin-bottom:0.3rem; }
+    .tl-text { font-size:0.8rem; color:rgba(245,242,236,0.6); font-weight:300; }
+    .tl-final { background:var(--accent); color:var(--navy); padding:1.25rem 1.5rem; margin-top:1.5rem; font-size:0.82rem; font-weight:600; margin-left:-3rem; }
+
+    /* RECRUIT */
+    .recruit { background:var(--navy); color:var(--white); padding:7rem 8%; }
+    .recruit .section-tag { color:var(--gold); }
+    .recruit .section-title { color:var(--white); }
+    .recruit .section-lead { color:rgba(245,242,236,0.7); }
+    .recruit .divider { background:var(--gold); }
+
+    .avg-salary-block {
+      background:var(--gold); color:var(--navy);
+      padding:2.5rem 3rem; margin:3rem 0;
+      display:flex; align-items:center; gap:3rem;
+      position:relative; overflow:hidden;
+    }
+    .avg-salary-block::after { content:'¥'; position:absolute; right:2rem; top:50%; transform:translateY(-50%); font-family:'Bebas Neue',sans-serif; font-size:8rem; color:rgba(13,27,42,0.08); line-height:1; }
+    .asl { font-size:0.75rem; font-weight:700; letter-spacing:3px; margin-bottom:0.3rem; }
+    .asn { font-family:'Bebas Neue',sans-serif; font-size:5rem; line-height:1; }
+    .asu { font-size:1.2rem; font-weight:700; }
+    .asnote { font-size:0.72rem; margin-top:0.5rem; opacity:0.7; }
+
+    .salary-grid { display:grid; grid-template-columns:repeat(3,1fr); background:rgba(255,255,255,0.05); border:1px solid rgba(200,169,110,0.2); margin-bottom:3rem; }
+    .salary-item { padding:1.5rem; text-align:center; border-right:1px solid rgba(200,169,110,0.2); }
+    .salary-item:last-child { border-right:none; }
+    .salary-item .label { font-size:0.65rem; letter-spacing:2px; color:var(--accent); margin-bottom:0.5rem; }
+    .salary-item .amount { font-family:'Bebas Neue',sans-serif; font-size:1.8rem; color:var(--white); line-height:1; }
+    .salary-item .unit { font-size:0.7rem; color:rgba(245,242,236,0.5); }
+
+    .recruit-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-bottom:3rem; }
+    .recruit-card { background:rgba(255,255,255,0.04); border:1px solid rgba(200,169,110,0.2); padding:2.5rem; }
+    .recruit-card h3 { font-family:'Noto Serif JP',serif; font-size:1.1rem; margin-bottom:2rem; padding-bottom:1rem; border-bottom:1px solid rgba(200,169,110,0.2); font-weight:600; color:var(--white); display:flex; align-items:center; gap:1rem; }
+    .rc-icon { width:36px; height:36px; background:var(--accent); display:inline-flex; align-items:center; justify-content:center; font-size:1rem; }
+    .recruit-table { width:100%; border-collapse:collapse; }
+    .recruit-table tr { border-bottom:1px solid rgba(200,169,110,0.15); }
+    .recruit-table td { padding:0.75rem 0; font-size:0.82rem; vertical-align:top; color:rgba(245,242,236,0.8); }
+    .recruit-table td:first-child { color:var(--accent); width:35%; font-size:0.72rem; letter-spacing:1px; padding-right:1rem; }
+
+    /* WELFARE */
+    .welfare { background:var(--light-bg); padding:7rem 8%; }
+    .welfare-title { font-family:'Noto Serif JP',serif; font-size:clamp(1.8rem,3vw,2.6rem); font-weight:600; margin-bottom:1rem; line-height:1.3; }
+    .benefits-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:3.5rem; }
+    .benefit-card { background:var(--white); padding:2.5rem 2rem; border-top:4px solid var(--accent); position:relative; transition:transform 0.3s,box-shadow 0.3s; }
+    .benefit-card:hover { transform:translateY(-4px); box-shadow:0 12px 40px rgba(0,0,0,0.1); }
+    .benefit-card.premium { border-top-color:var(--gold); }
+    .benefit-card.premium::before { content:'PREMIUM'; position:absolute; top:-1px; right:1.5rem; background:var(--gold); color:var(--navy); font-size:0.55rem; font-weight:700; padding:3px 8px; letter-spacing:1.5px; }
+    .benefit-icon { font-size:2.5rem; margin-bottom:1rem; }
+    .benefit-title { font-family:'Noto Serif JP',serif; font-size:1.05rem; font-weight:600; margin-bottom:0.75rem; color:var(--navy); }
+    .benefit-desc { font-size:0.82rem; color:#555; line-height:1.8; font-weight:300; }
+    .benefit-hl { display:inline-block; background:var(--gold); color:var(--navy); font-size:0.72rem; font-weight:700; padding:3px 10px; margin-top:0.75rem; }
+
+    /* GFC */
+    .gfc-sec { background:var(--navy); padding:7rem 8%; display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center; }
+    .gfc-sec .section-tag { color:var(--gold); }
+    .gfc-sec .section-title { color:var(--white); }
+    .gfc-sec .divider { background:var(--gold); }
+    .gfc-sec .section-lead { color:rgba(245,242,236,0.65); }
+    .gfc-visual { background:rgba(255,255,255,0.04); border:1px solid rgba(200,169,110,0.2); padding:3rem; text-align:center; position:relative; }
+    .gfc-logo { font-family:'Bebas Neue',sans-serif; font-size:5rem; color:var(--gold); letter-spacing:8px; line-height:1; }
+    .gfc-fullname { font-size:0.72rem; color:rgba(245,242,236,0.4); letter-spacing:3px; margin-bottom:2rem; }
+    .gfc-features { display:flex; flex-direction:column; gap:0.75rem; text-align:left; }
+    .gfc-feat { display:flex; align-items:center; gap:1rem; padding:0.75rem 1rem; background:rgba(255,255,255,0.03); border-left:3px solid var(--gold); }
+    .gfc-feat-icon { font-size:1.3rem; }
+    .gfc-feat-text { font-size:0.82rem; color:rgba(245,242,236,0.75); font-weight:300; }
+    .gfc-badge2 { position:absolute; top:-12px; right:2rem; background:var(--gold); color:var(--navy); font-size:0.65rem; font-weight:700; padding:4px 14px; letter-spacing:2px; }
+
+    /* PHILOSOPHY */
+    .philosophy { background:var(--accent); padding:6rem 8%; text-align:center; }
+    .philosophy-text { font-family:'Noto Serif JP',serif; font-size:clamp(1.3rem,2.5vw,2.2rem); font-weight:600; color:var(--navy); line-height:1.7; max-width:800px; margin:0 auto; }
+    .philosophy-small { font-size:0.8rem; margin-top:2rem; color:rgba(13,27,42,0.6); font-weight:300; letter-spacing:2px; }
+
+    /* CONTACT */
+    .contact { background:var(--deep-blue); padding:7rem 8%; text-align:center; color:var(--white); }
+    .contact .section-title { color:var(--white); margin:0 auto 1rem; }
+    .contact .section-lead { color:rgba(245,242,236,0.6); margin:0 auto 3rem; text-align:center; }
+    .contact-buttons { display:flex; justify-content:center; gap:1.5rem; flex-wrap:wrap; }
+
+    /* FOOTER */
+    footer { background:#070e17; color:rgba(245,242,236,0.4); padding:3rem 8%; display:flex; justify-content:space-between; align-items:center; font-size:0.72rem; letter-spacing:1px; }
+    .footer-logo { font-family:'Bebas Neue',sans-serif; font-size:1.5rem; color:var(--accent); letter-spacing:4px; }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp { from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);} }
+    @keyframes fadeIn { from{opacity:0;}to{opacity:1;} }
+    @keyframes scrollPulse { 0%,100%{opacity:0.4;}50%{opacity:1;} }
+    .reveal { transition:opacity 0.6s ease,transform 0.6s ease; }
+    .js-ready .reveal { opacity:0; transform:translateY(32px); }
+    .js-ready .reveal.visible { opacity:1; transform:none; }
+
+    @media(max-width:900px){
+      .stats{grid-template-columns:repeat(3,1fr);}
+      .about,.no1-grid,.gfc-sec,.after{grid-template-columns:1fr;gap:3rem;}
+      .services-grid{grid-template-columns:1fr;}
+      .process-steps{grid-template-columns:repeat(3,1fr);}
+      .process-steps::before{display:none;}
+      .repair-grid,.recruit-grid,.benefits-grid{grid-template-columns:1fr;}
+      .nav-links{display:none;}
+      .hero-badge{display:none;}
+      .avg-salary-block{flex-direction:column;gap:1rem;}
+      .services-header{flex-direction:column;align-items:flex-start;gap:1rem;}
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">KBM<span>株式会社KBM　創業56年</span></div>
+  <ul class="nav-links">
+    <li><a href="#no1">北陸No.1</a></li>
+    <li><a href="#about">企業情報</a></li>
+    <li><a href="#services">サービス</a></li>
+    <li><a href="#recruit">採用情報</a></li>
+    <li><a href="#welfare">福利厚生</a></li>
+    <li><a href="#contact" class="nav-cta">お問い合わせ</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-badge">
+    <span class="b-no">No.1</span>
+    <span class="b-area">北陸</span>
+    <span class="b-sub">大規模修繕<br>施工頭数</span>
+  </div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">大規模修繕工事 · リニューアル · リノベーション · 創業56年</p>
+    <div><span class="hero-no1-tag">★ 北陸エリア　大規模修繕 施工頭数 No.1 ★</span></div>
+    <h1 class="hero-title">
+      北陸で一番、<br>
+      あなたの建物を<br>
+      <em>守り続ける会社。</em>
+    </h1>
+    <p class="hero-sub">
+      創業56年。北陸エリアで最多の大規模修繕施工実績を誇る株式会社KBM。
+      確かな技術と56年の歴史で、ビル・マンションの資産価値を守り続けます。
+    </p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn-primary">無料相談・お見積り</a>
+      <a href="#recruit" class="btn-gold">📢 採用情報を見る</a>
+      <a href="#services" class="btn-secondary">サービスを見る</a>
+    </div>
+  </div>
+  <div class="hero-scroll"><div class="scroll-line"></div>SCROLL</div>
+</section>
+
+<!-- NO.1 BANNER -->
+<div class="no1-banner">北陸エリア　大規模修繕工事　施工頭数　No.1　― 創業56年の信頼と実績</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat-item hl">
+    <div class="stat-num">No<span class="stat-unit">.1</span></div>
+    <div class="stat-label">北陸 大規模修繕<br>施工頭数</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">56<span class="stat-unit">年</span></div>
+    <div class="stat-label">創業からの年数</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">500<span class="stat-unit">+</span></div>
+    <div class="stat-label">累計施工棟数</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">700<span class="stat-unit">万</span></div>
+    <div class="stat-label">社員平均年収（円）</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">10<span class="stat-unit">年</span></div>
+    <div class="stat-label">アフター保証</div>
+  </div>
+</div>
+
+<!-- NO.1 SECTION -->
+<section class="no1-sec" id="no1">
+  <div class="no1-grid">
+    <div class="reveal">
+      <span class="no1-big">No.1</span>
+      <p class="no1-sub">北陸エリア<br>大規模修繕<br>施工頭数 No.1</p>
+      <p class="no1-cap">北陸3県（石川・富山・福井）における大規模修繕工事の施工棟数において、地域最多の実績を誇ります。</p>
+    </div>
+    <div class="no1-points reveal">
+      <div class="no1-point">
+        <h4>圧倒的な施工棟数</h4>
+        <p>創業56年で積み上げた500棟超の施工実績。北陸で最も多くのマンション・ビルオーナーから選ばれ続けています。</p>
+      </div>
+      <div class="no1-point">
+        <h4>地域密着の信頼ネットワーク</h4>
+        <p>金沢を本拠地に、北陸の管理組合・オーナー様と長期的な信頼関係を構築。リピート・紹介案件が全体の7割を占めます。</p>
+      </div>
+      <div class="no1-point">
+        <h4>10年アフター保証で選ばれる</h4>
+        <p>施工後1・3・5・7・10年の定期点検と無償対応制度が、北陸エリアのオーナー様から高い評価を受けています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-image reveal">
+    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="施工現場">
+    <div class="about-badge">KBM<small>株式会社</small></div>
+  </div>
+  <div class="reveal">
+    <p class="section-tag">About KBM</p>
+    <h2 class="section-title">創業56年。<br>北陸の建物を守る、<br>地域No.1企業。</h2>
+    <div class="divider"></div>
+    <div class="founding-badge">
+      <div class="founding-num">56</div>
+      <div class="founding-text">
+        <strong style="font-size:0.9rem;">年の歴史と実績</strong><br>
+        創業以来、北陸エリアのビル・マンションに<br>寄り添い続けています
+      </div>
+    </div>
+    <p class="section-lead">
+      株式会社KBMは建築・土木のリニューアル工事を専門とし、北陸を中心に大規模修繕施工頭数No.1の実績を誇ります。「社業を通じて人間的成長を目指す」という経営理念のもと、建物の長期活用と地域社会への貢献を使命として取り組んでいます。
+    </p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="services-header">
+    <div>
+      <p class="section-tag">Our Services</p>
+      <h2 class="section-title">総合的な修繕・改善工事</h2>
+      <div class="divider"></div>
+    </div>
+    <p style="font-size:0.82rem;color:#888;font-weight:300;max-width:340px;line-height:1.8;">建物の劣化は部位ごとに進行度が異なります。専門家による早期診断と適切な対策が長期保全の鍵となります。</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-num">01</div><div class="service-icon">🏗️</div>
+      <h3 class="service-title">外壁・防水工事</h3>
+      <p class="service-text">劣化した外壁の塗装・補修・シーリング打替えから、屋上・バルコニーの防水工事まで。雨水の浸入を防ぎ、建物本来の性能を回復させます。</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-num">02</div><div class="service-icon">⚙️</div>
+      <h3 class="service-title">設備改修工事</h3>
+      <p class="service-text">給排水・電気設備の更新から、エントランス・共用部のリニューアルまで。社会変化や法改正に対応した機能向上工事を提案します。</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-num">03</div><div class="service-icon">🛡️</div>
+      <h3 class="service-title">躯体補修・耐震補強</h3>
+      <p class="service-text">コンクリートの中性化・ひび割れ・鉄筋露出などを診断・補修。耐震性能の向上により、建物の安全性と資産価値を高めます。</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-num">04</div><div class="service-icon">♿</div>
+      <h3 class="service-title">バリアフリー化</h3>
+      <p class="service-text">段差解消・手すり設置・エレベーター設置計画など、高齢化社会に対応したユニバーサルデザインへのリニューアルを支援します。</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-num">05</div><div class="service-icon">🔍</div>
+      <h3 class="service-title">調査・診断</h3>
+      <p class="service-text">専門スタッフが建物を詳細に調査。赤外線・打診・目視などの診断手法を組み合わせ、最適な工事プランを提案します。</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-num">06</div><div class="service-icon">📋</div>
+      <h3 class="service-title">長期修繕計画</h3>
+      <p class="service-text">30年以上を見据えた長期修繕計画の作成・見直しをサポート。修繕積立金の適正化と計画的な建物保全をお手伝いします。</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <p class="section-tag">How We Work</p>
+  <h2 class="section-title">調査・診断から<br>施工・アフターケアまで</h2>
+  <div class="divider"></div>
+  <p class="section-lead">居住者様や近隣への配慮を徹底し、安全で円滑な工事体制を整えます。工事完了後も継続的なサポートで、建物の長期的な価値を守ります。</p>
+  <div class="process-steps">
+    <div class="process-step reveal"><div class="step-circle"><span class="step-num">01</span></div><div class="step-title">現地調査・診断</div><p class="step-text">専門スタッフが建物を詳細に調査し、劣化状況を診断</p></div>
+    <div class="process-step reveal"><div class="step-circle"><span class="step-num">02</span></div><div class="step-title">工事プラン提案</div><p class="step-text">診断結果をもとに最適な工事計画と見積りを提案</p></div>
+    <div class="process-step reveal"><div class="step-circle"><span class="step-num">03</span></div><div class="step-title">工事着工</div><p class="step-text">居住者への説明・近隣配慮を徹底しながら安全施工</p></div>
+    <div class="process-step reveal"><div class="step-circle"><span class="step-num">04</span></div><div class="step-title">完成・引渡し</div><p class="step-text">施工後の品質確認・検査を経て丁寧にお引渡し</p></div>
+    <div class="process-step reveal"><div class="step-circle"><span class="step-num">05</span></div><div class="step-title">アフターケア</div><p class="step-text">10年間の定期点検で建物の長期的な価値を守る</p></div>
+  </div>
+</section>
+
+<!-- REPAIR GUIDE -->
+<section class="repair">
+  <p class="section-tag">Repair Guide</p>
+  <h2 class="section-title">修繕の目安</h2>
+  <div class="divider"></div>
+  <p class="section-lead">建物の劣化は部位ごとに進行度が異なります。回数ごとに重点工事が変化するため、計画的な修繕が重要です。</p>
+  <div class="repair-grid">
+    <div class="repair-card reveal">
+      <div class="repair-badge">1回目の修繕</div>
+      <h3>主に外部の修繕が中心</h3>
+      <ul class="repair-list">
+        <li>外壁塗装・タイル補修</li><li>屋上・バルコニー防水</li>
+        <li>シーリング（コーキング）打替え</li><li>鉄部塗装</li><li>共用廊下・階段の補修</li>
+      </ul>
+    </div>
+    <div class="repair-card reveal">
+      <div class="repair-badge">2回目以降の修繕</div>
+      <h3>機能向上・改善工事の比重増加</h3>
+      <ul class="repair-list">
+        <li>給排水・電気設備の更新</li><li>エントランス・共用部の改修</li>
+        <li>バリアフリー化（段差解消・手すり）</li><li>耐震補強工事</li><li>省エネ設備への更新</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- AFTER SERVICE -->
+<section class="after">
+  <div class="reveal">
+    <p class="section-tag">After Service</p>
+    <h2 class="section-title">10年間の<br>アフターメンテナンス</h2>
+    <div class="divider"></div>
+    <p class="section-lead">工事完了後も定期点検を実施し、不具合があれば無償対応。10年目の点検終了をもって「本当のお引渡し」と考えています。</p>
+  </div>
+  <div class="reveal">
+    <div class="timeline">
+      <div class="tl-item"><div class="tl-year">1年目</div><div class="tl-text">工事完了後の初回定期点検。不具合の早期発見・無償対応</div></div>
+      <div class="tl-item"><div class="tl-year">3年目</div><div class="tl-text">中間点検。防水・塗装等の経過状況を確認</div></div>
+      <div class="tl-item"><div class="tl-year">5年目</div><div class="tl-text">施工箇所の詳細点検。次期修繕に向けた提案も実施</div></div>
+      <div class="tl-item"><div class="tl-year">7年目</div><div class="tl-text">劣化状況の総合確認。長期計画の見直しをサポート</div></div>
+      <div class="tl-item"><div class="tl-year">10年目</div><div class="tl-text">最終定期点検。</div></div>
+      <div class="tl-final">✓ 10年目の点検終了をもって「本当のお引渡し」</div>
+    </div>
+  </div>
+</section>
+
+<!-- RECRUIT -->
+<section class="recruit" id="recruit">
+  <p class="section-tag">Recruit</p>
+  <h2 class="section-title">あなたの力を、<br>北陸No.1企業で活かせ。</h2>
+  <div class="divider"></div>
+  <p class="section-lead">創業56年、北陸で最多の施工実績を誇るKBMで、あなたのキャリアを築きませんか。実力主義の評価制度と業界トップクラスの待遇で、共に成長できる仲間を募集しています。</p>
+
+  <!-- 平均年収 -->
+  <div class="avg-salary-block reveal">
+    <div>
+      <div class="asl">社員平均年収</div>
+      <div class="asn">700<span class="asu">万円</span></div>
+      <div class="asnote">※正社員全体の平均値（2024年度実績）</div>
+    </div>
+    <div style="flex:1;">
+      <p style="font-size:0.9rem;font-weight:600;margin-bottom:0.5rem;">業界水準を大きく上回る待遇</p>
+      <p style="font-size:0.82rem;line-height:1.9;opacity:0.8;">建設業の全国平均年収（約490万円）を大幅に上回る700万円。実力と経験に応じた昇給・賞与制度で、頑張りが収入に直結します。</p>
+    </div>
+  </div>
+
+  <p style="font-size:0.75rem;color:rgba(245,242,236,0.5);margin-bottom:0.75rem;letter-spacing:2px;">— 初任給（新卒）</p>
+  <div class="salary-grid reveal">
+    <div class="salary-item"><div class="label">高卒</div><div class="amount">205,000</div><div class="unit">円（月給）</div></div>
+    <div class="salary-item"><div class="label">短大・専門卒</div><div class="amount">210,000</div><div class="unit">円（月給）</div></div>
+    <div class="salary-item"><div class="label">大卒</div><div class="amount">240,000</div><div class="unit">円（月給）</div></div>
+  </div>
+
+  <div class="recruit-grid reveal">
+    <div class="recruit-card">
+      <h3><span class="rc-icon">🔧</span>工事部（現場作業）</h3>
+      <table class="recruit-table">
+        <tr><td>勤務地</td><td>金沢市（本社）</td></tr>
+        <tr><td>雇用形態</td><td>正社員</td></tr>
+        <tr><td>勤務時間</td><td>8:00〜17:00（残業 月約10時間）</td></tr>
+        <tr><td>休日</td><td>年間102日</td></tr>
+        <tr><td>賞与・昇給</td><td>賞与年2回・昇給年1回</td></tr>
+        <tr><td>社用車</td><td>🚙 SUV（全員支給）</td></tr>
+      </table>
+    </div>
+    <div class="recruit-card">
+      <h3><span class="rc-icon">💼</span>営業部（ルート営業）</h3>
+      <table class="recruit-table">
+        <tr><td>業務内容</td><td>ルート営業・調査・見積作成など</td></tr>
+        <tr><td>勤務地</td><td>金沢市（本社）</td></tr>
+        <tr><td>雇用形態</td><td>正社員</td></tr>
+        <tr><td>勤務時間</td><td>8:00〜17:00（残業 月約10時間）</td></tr>
+        <tr><td>休日</td><td>年間102日</td></tr>
+        <tr><td>社用車</td><td>🚙 SUV（営業車として支給）</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- WELFARE -->
+<section class="welfare" id="welfare">
+  <p class="section-tag">Welfare & Benefits</p>
+  <h2 class="welfare-title">KBMで働くことの<br><em style="font-style:normal;color:var(--accent);">特別な価値</em></h2>
+  <div class="divider"></div>
+  <p class="section-lead">年収だけじゃない。KBMには社員の生活を豊かにする、業界随一の福利厚生が揃っています。</p>
+
+  <div class="benefits-grid">
+    <div class="benefit-card premium reveal">
+      <div class="benefit-icon">🚗</div>
+      <div class="benefit-title">ベンツ貸し出し制度</div>
+      <div class="benefit-desc">成果を出した社員へのインセンティブとして、メルセデス・ベンツを業務・プライベートで利用できる特別制度。頑張りが目に見える形で返ってきます。</div>
+      <span class="benefit-hl">社員限定 プレミアム特典</span>
+    </div>
+    <div class="benefit-card premium reveal">
+      <div class="benefit-icon">🏔️</div>
+      <div class="benefit-title">GFCリゾート施設 利用可能</div>
+      <div class="benefit-desc">会員制リゾート施設「GFC」を社員・家族で利用可能。全国の一流リゾートで、日常を忘れるバカンスを。家族同伴もOKです。</div>
+      <span class="benefit-hl">家族同伴利用OK</span>
+    </div>
+    <div class="benefit-card premium reveal">
+      <div class="benefit-icon">🚙</div>
+      <div class="benefit-title">社用車は全員SUV</div>
+      <div class="benefit-desc">営業・現場担当者へ支給される社用車は全車SUV。快適で機能的なクルマで、金沢・北陸エリアを駆け回ります。</div>
+      <span class="benefit-hl">全員SUV支給</span>
+    </div>
+    <div class="benefit-card reveal">
+      <div class="benefit-icon">📚</div>
+      <div class="benefit-title">資格取得費用 全額負担</div>
+      <div class="benefit-desc">施工管理技士・建築士など、業務に関連する資格の受験費用・教材費を会社が全額負担。スキルアップを全力でバックアップします。</div>
+    </div>
+    <div class="benefit-card reveal">
+      <div class="benefit-icon">🏆</div>
+      <div class="benefit-title">永年勤続表彰</div>
+      <div class="benefit-desc">長年にわたりKBMを支えてくれた社員を節目ごとに表彰。特別休暇や記念品で感謝と敬意を伝えます。</div>
+    </div>
+    <div class="benefit-card reveal">
+      <div class="benefit-icon">✈️</div>
+      <div class="benefit-title">研修旅行・各種手当</div>
+      <div class="benefit-desc">年1回の研修旅行や、住宅手当・家族手当など各種手当を完備。賞与年2回・昇給年1回で、頑張りをしっかり評価します。</div>
+    </div>
+  </div>
+</section>
+
+<!-- GFC -->
+<section class="gfc-sec">
+  <div class="reveal">
+    <p class="section-tag">Member's Resort</p>
+    <h2 class="section-title">GFC会員制<br>リゾート施設</h2>
+    <div class="divider"></div>
+    <p class="section-lead">KBMの社員は、会員制リゾート施設「GFC」を特別料金で利用できます。軽井沢・那須・京都など全国の一流リゾートで、仕事の疲れをリフレッシュ。家族と一緒に、特別な時間を。</p>
+    <ul style="margin-top:2rem;list-style:none;display:flex;flex-direction:column;gap:0.75rem;">
+      <li style="font-size:0.88rem;color:rgba(245,242,236,0.7);display:flex;align-items:center;gap:0.75rem;"><span style="color:var(--gold);font-size:1.2rem;">✓</span> 家族・パートナー同伴での利用OK</li>
+      <li style="font-size:0.88rem;color:rgba(245,242,236,0.7);display:flex;align-items:center;gap:0.75rem;"><span style="color:var(--gold);font-size:1.2rem;">✓</span> 全国の一流リゾートホテルにアクセス</li>
+      <li style="font-size:0.88rem;color:rgba(245,242,236,0.7);display:flex;align-items:center;gap:0.75rem;"><span style="color:var(--gold);font-size:1.2rem;">✓</span> 社員特別割引料金で利用可能</li>
+    </ul>
+  </div>
+  <div class="reveal">
+    <div class="gfc-visual">
+      <div class="gfc-badge2">MEMBER'S BENEFIT</div>
+      <div class="gfc-logo">GFC</div>
+      <div class="gfc-fullname">GOLDEN FOREST CLUB</div>
+      <div class="gfc-features">
+        <div class="gfc-feat"><span class="gfc-feat-icon">🏨</span><span class="gfc-feat-text">全国一流リゾートホテルが利用可能</span></div>
+        <div class="gfc-feat"><span class="gfc-feat-icon">👨‍👩‍👧</span><span class="gfc-feat-text">家族同伴での利用OK</span></div>
+        <div class="gfc-feat"><span class="gfc-feat-icon">🌿</span><span class="gfc-feat-text">軽井沢・那須・京都など主要エリア</span></div>
+        <div class="gfc-feat"><span class="gfc-feat-icon">💳</span><span class="gfc-feat-text">社員特別料金でリゾートを満喫</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section class="philosophy">
+  <p class="philosophy-text">「社業を通じて人間的成長を目指す」<br>建物の長期活用と社会貢献を使命として。</p>
+  <p class="philosophy-small">― 株式会社KBM 経営理念　創業56年</p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <p class="section-tag" style="color:var(--accent);">Contact</p>
+  <h2 class="section-title">お気軽にご相談ください</h2>
+  <div class="divider" style="background:var(--accent);margin:1rem auto 2rem;"></div>
+  <p class="section-lead">建物の劣化診断・工事のご相談・お見積りは無料です。<br>北陸No.1の実績で、あなたの建物を守ります。</p>
+  <div class="contact-buttons">
+    <a href="tel:0762421494" class="btn-secondary" style="font-size:0.9rem;padding:16px 48px;">📞 076-242-1494</a>
+    <a href="mailto:info@kbmgroup.co.jp" class="btn-primary" style="font-size:0.9rem;padding:16px 48px;">✉️ メールで相談する</a>
+    <a href="#recruit" class="btn-gold" style="font-size:0.9rem;padding:16px 48px;">📢 採用エントリー</a>
+  </div>
+  <p style="margin-top:2.5rem;font-size:0.72rem;color:rgba(245,242,236,0.3);letter-spacing:2px;">本社：石川県金沢市 / 受付時間：平日 8:00〜17:00</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="footer-logo">KBM</div>
+    <p style="margin-top:0.4rem;">株式会社KBM © 2024 All Rights Reserved.</p>
+    <p style="margin-top:0.2rem;">創業56年 | 北陸エリア大規模修繕施工頭数No.1</p>
+  </div>
+  <div style="text-align:right;">
+    <p>石川県金沢市（本社）</p>
+    <p style="margin-top:0.25rem;">大規模修繕工事・リニューアル・リノベーション</p>
+  </div>
+</footer>
+
+<script>
+  // アニメーション：JS有効時のみ opacity:0 を適用
+  document.body.classList.add('js-ready');
+
+  const reveals = document.querySelectorAll('.reveal');
+
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 70);
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
+
+    reveals.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight) {
+        el.classList.add('visible');
+      } else {
+        obs.observe(el);
+      }
+    });
+  } else {
+    reveals.forEach(el => el.classList.add('visible'));
+  }
+
+  // Nav background on scroll
+  window.addEventListener('scroll', () => {
+    document.querySelector('nav').style.background =
+      window.scrollY > 50 ? 'rgba(13,27,42,1)' : 'rgba(13,27,42,0.97)';
+  }, { passive: true });
+</script>
+</body>
+</html>

@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#0a1628">
+  <title>株式会社KBM | 採用情報 - 北陸No.1</title>
+  <meta name="google-site-verification" content="kraQySds0JXq73ihSeO7qyeOO3RKFj5nXSGJEL1yIok">
+  <meta name="description" content="北陸No.1の株式会社KBM採用情報。平均年収700万円・メルセデス貸出・GFCリゾート・SUV社用車。創業56年の安定企業で一緒に働きませんか。">
+  <meta property="og:title" content="株式会社KBM 採用情報 | 北陸No.1 平均年収700万円">
+  <meta property="og:description" content="北陸エリア施工頭数No.1。平均年収700万円、メルセデス貸出制度、GFCリゾート利用可。採用エントリー受付中。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://www.kbmgroup.co.jp/sp.html">
+  <link rel="canonical" href="http://www.kbmgroup.co.jp/sp.html">
+  <link rel="alternate" media="handheld" href="http://www.kbmgroup.co.jp/sp.html">
+  <!-- デスクトップ判定リダイレクト -->
+  <script>
+    (function(){
+      var ua = navigator.userAgent;
+      var isMobile = /iPhone|Android.*Mobile|Windows Phone/i.test(ua);
+      if (!isMobile) { window.location.replace('/'); }
+    })();
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600;700&family=Noto+Sans+JP:wght@300;400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink:    #0a1628;
+      --ink2:   #12233f;
+      --gold:   #e6b84a;
+      --glow:   #f5d06a;
+      --cream:  #f4f0e8;
+      --mist:   #e8e4dc;
+      --rust:   #c8a96e;
+      --white:  #ffffff;
+      --txt:    rgba(255,255,255,0.75);
+      --txt2:   rgba(255,255,255,0.45);
+    }
+
+    /* ─── RESET ─── */
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: var(--ink);
+      color: var(--white);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* ─── STICKY RECRUIT BAR ─── */
+    .recruit-bar {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 999;
+      display: flex;
+      height: 64px;
+      box-shadow: 0 -8px 32px rgba(0,0,0,0.5);
+    }
+    .rb-tel {
+      flex: 1;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      background: var(--ink2);
+      color: var(--gold);
+      font-size: 0.8rem; font-weight: 700; letter-spacing: 0.5px;
+      border-top: 1px solid rgba(230,184,74,0.3);
+    }
+    .rb-tel svg { width:18px; height:18px; fill:var(--gold); }
+    .rb-entry {
+      flex: 1.6;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      background: var(--gold);
+      color: var(--ink);
+      font-size: 0.88rem; font-weight: 700; letter-spacing: 1px;
+      position: relative;
+      overflow: hidden;
+    }
+    .rb-entry::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.18) 50%, transparent 100%);
+      transform: translateX(-100%);
+      animation: shimmer 2.5s infinite;
+    }
+    @keyframes shimmer { to { transform: translateX(100%); } }
+    .rb-entry svg { width:18px; height:18px; fill:var(--ink); }
+
+    /* ─── MINI NAV ─── */
+    .topbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 900;
+      height: 52px;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 20px;
+      background: rgba(10,22,40,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(230,184,74,0.15);
+    }
+    .tb-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem; letter-spacing: 3px;
+      color: var(--rust);
+      line-height: 1;
+    }
+    .tb-logo small {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 0.45rem; font-weight: 300;
+      color: var(--txt2); display: block;
+      letter-spacing: 2px; margin-top: -2px;
+    }
+    .tb-no1 {
+      background: var(--gold); color: var(--ink);
+      font-size: 0.55rem; font-weight: 700;
+      padding: 4px 10px; letter-spacing: 1.5px;
+      line-height: 1.4; text-align: center;
+    }
+
+    /* ─── FULL-SCREEN PANELS ─── */
+    .panel {
+      min-height: 100svh;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 52px 0 64px; /* topbar + recruit-bar */
+    }
+
+    /* ─── HERO PANEL ─── */
+    .hero-panel {
+      background: var(--ink);
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse at 70% 40%, rgba(230,184,74,0.06) 0%, transparent 60%),
+        linear-gradient(180deg, rgba(10,22,40,0.3) 0%, rgba(10,22,40,0.65) 50%, rgba(10,22,40,0.97) 100%),
+        url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=70') center/cover no-repeat;
+    }
+    /* Particle dots */
+    .hero-dots {
+      position: absolute; inset: 0;
+      background-image: radial-gradient(rgba(230,184,74,0.12) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+
+    .hero-content {
+      position: relative; z-index: 2;
+      padding: 0 22px 36px;
+    }
+    .hero-eyebrow {
+      display: inline-block;
+      background: var(--gold); color: var(--ink);
+      font-size: 0.62rem; font-weight: 700;
+      padding: 5px 14px; letter-spacing: 2px;
+      margin-bottom: 18px;
+    }
+    .hero-h1 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(1.85rem, 8.5vw, 2.6rem);
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 16px;
+      color: var(--white);
+    }
+    .hero-h1 em { font-style: normal; color: var(--gold); }
+    .hero-sub {
+      font-size: 0.82rem;
+      color: var(--txt);
+      line-height: 1.9;
+      margin-bottom: 28px;
+      font-weight: 300;
+    }
+    .hero-cta {
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .hero-cta a {
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 16px 20px;
+      font-size: 0.9rem; font-weight: 700; letter-spacing: 1px;
+    }
+    .hcta-main {
+      background: var(--gold); color: var(--ink);
+      position: relative; overflow: hidden;
+    }
+    .hcta-main::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(90deg,transparent,rgba(255,255,255,0.15),transparent);
+      transform: translateX(-100%);
+      animation: shimmer 3s 1s infinite;
+    }
+    .hcta-sub {
+      background: transparent; color: var(--white);
+      border: 1.5px solid rgba(255,255,255,0.3);
+      font-weight: 300;
+    }
+
+    /* Floating badge */
+    .float-badge {
+      position: absolute;
+      top: 68px; right: 18px;
+      width: 82px; height: 82px;
+      background: var(--gold); color: var(--ink);
+      border-radius: 50%;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      text-align: center;
+      z-index: 3;
+      box-shadow: 0 0 0 5px rgba(230,184,74,0.2), 0 0 0 10px rgba(230,184,74,0.08);
+      animation: pulse 2.8s ease-in-out infinite;
+    }
+    .float-badge .fbn { font-family:'Bebas Neue',sans-serif; font-size:1.6rem; line-height:1; }
+    .float-badge .fbs { font-size:0.4rem; font-weight:700; letter-spacing:0.5px; line-height:1.5; }
+    @keyframes pulse {
+      0%,100%{box-shadow:0 0 0 5px rgba(230,184,74,0.2),0 0 0 10px rgba(230,184,74,0.07);}
+      50%{box-shadow:0 0 0 9px rgba(230,184,74,0.25),0 0 0 18px rgba(230,184,74,0.1);}
+    }
+
+    /* Scroll hint */
+    .scroll-hint {
+      position: absolute;
+      bottom: 72px; left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      display: flex; flex-direction: column; align-items: center; gap: 4px;
+    }
+    .sh-txt { font-size: 0.55rem; letter-spacing: 3px; color: var(--txt2); }
+    .sh-line {
+      width: 1px; height: 36px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+      animation: lineGrow 1.8s ease-in-out infinite;
+    }
+    @keyframes lineGrow {
+      0%,100%{opacity:0.4;transform:scaleY(1);}
+      50%{opacity:1;transform:scaleY(1.2);}
+    }
+
+    /* ─── STATS PANEL ─── */
+    .stats-panel {
+      min-height: auto;
+      background: var(--ink2);
+      padding: 0;
+      display: block;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .stat-block {
+      padding: 24px 16px;
+      text-align: center;
+      border-right: 1px solid rgba(230,184,74,0.1);
+      border-bottom: 1px solid rgba(230,184,74,0.1);
+      position: relative;
+    }
+    .stat-block:nth-child(2n) { border-right: none; }
+    .stat-block.s-hl { background: rgba(230,184,74,0.06); }
+    .stat-block.s-hl::before {
+      content: 'No.1';
+      position: absolute; top: 6px; left: 50%; transform: translateX(-50%);
+      background: var(--gold); color: var(--ink);
+      font-size: 0.48rem; font-weight:700; padding: 2px 8px; letter-spacing:1px;
+    }
+    .s-hl .sv { color: var(--gold); }
+    .sv {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.6rem; color: var(--rust); line-height: 1;
+    }
+    .su { font-size: 0.9rem; }
+    .sl { font-size: 0.58rem; color: var(--txt2); letter-spacing:1px; margin-top:4px; line-height:1.5; }
+
+    /* ─── CONTENT SECTIONS ─── */
+    .csec {
+      padding: 60px 22px;
+      position: relative;
+    }
+    .csec + .csec { border-top: 1px solid rgba(230,184,74,0.08); }
+
+    .stag {
+      font-size: 0.58rem; letter-spacing: 5px;
+      color: var(--gold); text-transform: uppercase;
+      margin-bottom: 8px; font-weight: 400;
+    }
+    .stitle {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(1.4rem, 6.5vw, 2rem);
+      font-weight: 700; line-height: 1.35;
+      margin-bottom: 10px;
+    }
+    .sdiv {
+      width: 36px; height: 3px;
+      background: var(--gold);
+      margin: 14px 0 18px;
+    }
+    .slead {
+      font-size: 0.82rem; line-height: 1.9;
+      color: var(--txt); font-weight: 300;
+    }
+
+    /* ─── NO.1 ─── */
+    .no1-sec { background: var(--ink); }
+    .no1-num-block { text-align: center; padding: 28px 0; }
+    .no1-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(6rem, 30vw, 10rem);
+      color: var(--gold);
+      line-height: 0.85;
+      display: block;
+    }
+    .no1-label {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1rem; font-weight: 700;
+      color: var(--white); margin-top: 10px;
+    }
+    .no1-caption { font-size: 0.7rem; color: var(--txt2); margin-top:6px; line-height:1.7; }
+    .no1-bullets {
+      display: flex; flex-direction: column; gap: 12px;
+      margin-top: 24px;
+    }
+    .no1-bul {
+      background: rgba(230,184,74,0.05);
+      border-left: 3px solid var(--gold);
+      padding: 14px 16px;
+    }
+    .no1-bul h4 { font-size:0.88rem; color:var(--gold); font-weight:700; margin-bottom:4px; }
+    .no1-bul p { font-size:0.75rem; color:var(--txt); line-height:1.8; font-weight:300; }
+
+    /* ─── ABOUT ─── */
+    .about-sec { background: var(--cream); color: var(--ink); }
+    .about-sec .stag { color: var(--rust); }
+    .about-sec .stitle { color: var(--ink); }
+    .about-sec .sdiv { background: var(--rust); }
+    .about-sec .slead { color: #444; }
+    .founding-row {
+      display: flex; align-items: center; gap: 14px;
+      background: var(--ink);
+      padding: 16px 18px;
+      margin: 20px 0;
+    }
+    .fr-num { font-family:'Bebas Neue',sans-serif; font-size:2.8rem; color:var(--gold); line-height:1; }
+    .fr-txt { font-size:0.73rem; color:var(--white); line-height:1.7; }
+    .fr-txt strong { font-size:0.85rem; }
+
+    /* ─── SALARY HERO ─── */
+    .salary-hero {
+      background: var(--gold);
+      color: var(--ink);
+      padding: 28px 22px;
+      position: relative;
+      overflow: hidden;
+    }
+    .salary-hero::after {
+      content: '¥';
+      position: absolute; right:14px; top:50%; transform:translateY(-50%);
+      font-family:'Bebas Neue',sans-serif; font-size:7rem;
+      color:rgba(10,22,40,0.07); line-height:1;
+    }
+    .sh-lbl { font-size:0.65rem; font-weight:700; letter-spacing:3px; margin-bottom:4px; }
+    .sh-num { font-family:'Bebas Neue',sans-serif; font-size:4.5rem; line-height:1; }
+    .sh-unt { font-size:1.1rem; font-weight:700; }
+    .sh-note { font-size:0.62rem; margin-top:4px; opacity:0.7; }
+    .sh-desc { font-size:0.78rem; margin-top:12px; line-height:1.8; opacity:0.85; font-weight:400; }
+
+    /* entry salary */
+    .esalary {
+      display: grid; grid-template-columns:repeat(3,1fr);
+      background: rgba(255,255,255,0.04);
+      border:1px solid rgba(230,184,74,0.2);
+      margin-bottom: 20px;
+    }
+    .esc { padding:14px 8px; text-align:center; border-right:1px solid rgba(230,184,74,0.2); }
+    .esc:last-child { border-right:none; }
+    .esc-l { font-size:0.58rem; letter-spacing:1.5px; color:var(--rust); margin-bottom:4px; }
+    .esc-a { font-family:'Bebas Neue',sans-serif; font-size:1.5rem; color:var(--white); line-height:1; }
+    .esc-u { font-size:0.58rem; color:var(--txt2); }
+
+    /* job card */
+    .job-crd {
+      background: rgba(255,255,255,0.03);
+      border:1px solid rgba(230,184,74,0.15);
+      padding:18px 16px;
+      margin-bottom:12px;
+    }
+    .jc-hd {
+      display:flex; align-items:center; gap:10px;
+      font-family:'Noto Serif JP',serif; font-size:0.95rem; font-weight:700;
+      color:var(--white);
+      padding-bottom:12px; margin-bottom:12px;
+      border-bottom:1px solid rgba(230,184,74,0.15);
+    }
+    .jc-ico { width:30px; height:30px; background:var(--rust); display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0; }
+    .jc-row { display:flex; gap:10px; padding:7px 0; border-bottom:1px solid rgba(255,255,255,0.05); font-size:0.75rem; }
+    .jc-row:last-child { border-bottom:none; }
+    .jc-k { color:var(--rust); width:62px; flex-shrink:0; font-size:0.68rem; }
+    .jc-v { color:var(--txt); line-height:1.6; }
+
+    /* recruit CTA */
+    .recruit-cta {
+      display:flex; align-items:center; justify-content:center; gap:8px;
+      background: var(--gold); color:var(--ink);
+      padding: 18px; margin-top:6px;
+      font-size:0.95rem; font-weight:700; letter-spacing:1px;
+      position:relative; overflow:hidden;
+    }
+    .recruit-cta::before {
+      content:'';
+      position:absolute; inset:0;
+      background:linear-gradient(90deg,transparent,rgba(255,255,255,0.15),transparent);
+      transform:translateX(-100%);
+      animation:shimmer 2.5s infinite;
+    }
+
+    /* ─── BENEFITS ─── */
+    .benefits-sec { background: var(--mist); color: var(--ink); }
+    .benefits-sec .stag { color: var(--rust); }
+    .benefits-sec .stitle { color: var(--ink); }
+    .benefits-sec .sdiv { background: var(--rust); }
+    .bcards { display:flex; flex-direction:column; gap:12px; margin-top:20px; }
+    .bcard {
+      background: var(--white);
+      border-top: 4px solid var(--rust);
+      padding: 18px 16px;
+      position: relative;
+    }
+    .bcard.bp { border-top-color: var(--gold); }
+    .bcard.bp::before {
+      content:'PREMIUM';
+      position:absolute; top:-1px; right:12px;
+      background:var(--gold); color:var(--ink);
+      font-size:0.48rem; font-weight:700; padding:3px 8px; letter-spacing:1.5px;
+    }
+    .bc-ic { font-size:1.8rem; margin-bottom:8px; }
+    .bc-tl { font-family:'Noto Serif JP',serif; font-size:0.92rem; font-weight:700; margin-bottom:6px; color:var(--ink); }
+    .bc-ds { font-size:0.75rem; color:#555; line-height:1.8; font-weight:300; }
+    .bc-hl { display:inline-block; background:var(--gold); color:var(--ink); font-size:0.62rem; font-weight:700; padding:2px 9px; margin-top:8px; }
+
+    /* ─── GFC ─── */
+    .gfc-sec { background: var(--ink); }
+    .gfc-box {
+      background: rgba(255,255,255,0.03);
+      border:1px solid rgba(230,184,74,0.2);
+      padding:24px 18px;
+      text-align:center;
+      position:relative;
+      margin-top:22px;
+    }
+    .gfc-tag { position:absolute; top:-10px; right:14px; background:var(--gold); color:var(--ink); font-size:0.58rem; font-weight:700; padding:3px 12px; letter-spacing:1.5px; }
+    .gfc-lgo { font-family:'Bebas Neue',sans-serif; font-size:3.2rem; color:var(--gold); letter-spacing:6px; line-height:1; }
+    .gfc-fn { font-size:0.58rem; color:var(--txt2); letter-spacing:3px; margin-bottom:18px; }
+    .gfc-fts { display:flex; flex-direction:column; gap:8px; text-align:left; }
+    .gfc-ft { display:flex; align-items:center; gap:10px; padding:9px 12px; background:rgba(255,255,255,0.03); border-left:3px solid var(--gold); }
+    .gft-ic { font-size:1.1rem; }
+    .gft-tx { font-size:0.75rem; color:var(--txt); font-weight:300; }
+
+    /* ─── PROCESS ─── */
+    .proc-sec { background: var(--ink2); }
+    .proc-vl { display:flex; flex-direction:column; gap:0; margin-top:24px; padding-left:44px; position:relative; }
+    .proc-vl::before { content:''; position:absolute; left:16px; top:14px; bottom:14px; width:1.5px; background:linear-gradient(to bottom,var(--gold),rgba(230,184,74,0.1)); }
+    .pv { position:relative; margin-bottom:28px; }
+    .pv:last-child { margin-bottom:0; }
+    .pv-dot { position:absolute; left:-44px; top:4px; width:34px; height:34px; background:var(--ink2); border:2px solid var(--gold); border-radius:50%; display:flex; align-items:center; justify-content:center; }
+    .pv-n { font-family:'Bebas Neue',sans-serif; font-size:0.9rem; color:var(--gold); }
+    .pv-t { font-size:0.9rem; font-weight:700; color:var(--white); margin-bottom:3px; }
+    .pv-d { font-size:0.75rem; color:var(--txt); line-height:1.7; font-weight:300; }
+
+    /* ─── AFTER SERVICE ─── */
+    .after-sec { background: var(--ink); }
+    .at-tl { display:flex; flex-direction:column; gap:0; margin-top:22px; padding-left:44px; position:relative; }
+    .at-tl::before { content:''; position:absolute; left:14px; top:8px; bottom:8px; width:1px; background:linear-gradient(to bottom,var(--gold),rgba(230,184,74,0.1)); }
+    .at-it { position:relative; margin-bottom:22px; }
+    .at-dot { position:absolute; left:-44px; top:5px; width:10px; height:10px; border:2px solid var(--gold); border-radius:50%; background:var(--ink); transform:translateX(-50%); }
+    .at-yr { font-family:'Bebas Neue',sans-serif; font-size:1.3rem; color:var(--gold); line-height:1; }
+    .at-tx { font-size:0.75rem; color:var(--txt); font-weight:300; line-height:1.7; }
+    .at-fin { background:var(--gold); color:var(--ink); padding:13px 16px; font-size:0.78rem; font-weight:700; margin-left:-44px; margin-top:6px; }
+
+    /* ─── REPAIR ─── */
+    .repair-sec { background: var(--cream); color:var(--ink); }
+    .repair-sec .stag { color:var(--rust); }
+    .repair-sec .stitle { color:var(--ink); }
+    .repair-sec .sdiv { background:var(--rust); }
+    .repair-sec .slead { color:#444; }
+    .rcards { display:flex; flex-direction:column; gap:14px; margin-top:20px; }
+    .rcard { background:var(--white); border-left:4px solid var(--rust); padding:18px 16px; position:relative; }
+    .rb { position:absolute; top:-1px; left:-4px; background:var(--rust); color:var(--ink); font-size:0.58rem; padding:3px 10px; letter-spacing:1.5px; font-weight:700; }
+    .rcard h3 { font-family:'Noto Serif JP',serif; font-size:0.92rem; margin:16px 0 10px; font-weight:700; color:var(--ink); }
+    .rlist { list-style:none; }
+    .rlist li { font-size:0.75rem; padding:6px 0; border-bottom:1px solid #e0dbd0; color:#444; display:flex; align-items:center; gap:7px; font-weight:300; }
+    .rlist li::before { content:'▶'; font-size:0.42rem; color:var(--rust); flex-shrink:0; }
+
+    /* ─── PHILOSOPHY ─── */
+    .phil-sec {
+      background: var(--gold);
+      color: var(--ink);
+      padding: 52px 24px;
+      text-align: center;
+    }
+    .phil-q { font-size:0.7rem; font-weight:700; letter-spacing:3px; margin-bottom:16px; opacity:0.6; }
+    .phil-t { font-family:'Noto Serif JP',serif; font-size:clamp(1.1rem,5.5vw,1.7rem); font-weight:700; line-height:1.7; }
+    .phil-s { font-size:0.68rem; margin-top:14px; opacity:0.6; letter-spacing:2px; }
+
+    /* ─── CONTACT ─── */
+    .contact-sec { background:var(--ink2); padding:56px 22px; text-align:center; }
+    .contact-sec .stitle { color:var(--white); }
+    .contact-sec .slead { text-align:center; }
+    .ctns { display:flex; flex-direction:column; gap:12px; margin-top:24px; }
+    .ctn { display:flex; align-items:center; justify-content:center; gap:8px; padding:16px; font-size:0.88rem; font-weight:700; letter-spacing:1px; }
+    .ct-tel { background:var(--ink); color:var(--gold); border:1.5px solid var(--gold); }
+    .ct-mail { background:var(--rust); color:var(--ink); }
+    .ct-entry { background:var(--gold); color:var(--ink); position:relative; overflow:hidden; }
+    .ct-entry::before { content:''; position:absolute; inset:0; background:linear-gradient(90deg,transparent,rgba(255,255,255,0.15),transparent); transform:translateX(-100%); animation:shimmer 2.5s infinite; }
+
+    /* ─── FOOTER ─── */
+    footer { background:#040b14; padding:22px 20px; color:var(--txt2); font-size:0.64rem; letter-spacing:1px; line-height:1.9; }
+    .fl { font-family:'Bebas Neue',sans-serif; font-size:1.3rem; color:var(--rust); letter-spacing:3px; margin-bottom:6px; }
+    .footer-pad { height:64px; } /* sticky bar space */
+
+    /* ─── SCROLL REVEAL ─── */
+    /* デフォルトは見える状態。JSが読み込まれた後にアニメーション有効化 */
+    .js-ready .sr {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.6s cubic-bezier(0.16,1,0.3,1),
+                  transform 0.6s cubic-bezier(0.16,1,0.3,1);
+    }
+    .js-ready .sr.up { opacity:1; transform:none; }
+
+    .js-ready .sr-l {
+      opacity:0; transform:translateX(-24px);
+      transition: opacity 0.55s cubic-bezier(0.16,1,0.3,1),
+                  transform 0.55s cubic-bezier(0.16,1,0.3,1);
+    }
+    .js-ready .sr-l.up { opacity:1; transform:none; }
+
+    .js-ready .sr-r {
+      opacity:0; transform:translateX(24px);
+      transition: opacity 0.55s cubic-bezier(0.16,1,0.3,1),
+                  transform 0.55s cubic-bezier(0.16,1,0.3,1);
+    }
+    .js-ready .sr-r.up { opacity:1; transform:none; }
+
+    .js-ready .sr-s {
+      opacity:0; transform:scale(0.9);
+      transition: opacity 0.55s cubic-bezier(0.16,1,0.3,1),
+                  transform 0.55s cubic-bezier(0.16,1,0.3,1);
+    }
+    .js-ready .sr-s.up { opacity:1; transform:scale(1); }
+
+    /* stagger delays */
+    .js-ready [data-d="1"] { transition-delay: 0.06s; }
+    .js-ready [data-d="2"] { transition-delay: 0.12s; }
+    .js-ready [data-d="3"] { transition-delay: 0.18s; }
+    .js-ready [data-d="4"] { transition-delay: 0.24s; }
+    .js-ready [data-d="5"] { transition-delay: 0.30s; }
+
+    /* progress bar on scroll */
+    .progress-bar {
+      position: fixed;
+      top: 52px; left: 0;
+      height: 2px;
+      background: var(--gold);
+      width: 0%;
+      z-index: 901;
+      transition: width 0.1s linear;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ──────────────── STICKY BOTTOM BAR ──────────────── -->
+<div class="recruit-bar">
+  <a href="tel:0762421494" class="rb-tel">
+    <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+    076-242-1494
+  </a>
+  <a href="#recruit" class="rb-entry">
+    <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+    採用エントリー
+  </a>
+</div>
+
+<!-- ──────────────── TOP BAR ──────────────── -->
+<header class="topbar">
+  <div class="tb-logo">KBM<small>株式会社KBM 創業56年</small></div>
+  <div class="tb-no1">北陸No.1<br>施工頭数</div>
+</header>
+
+<!-- progress bar -->
+<div class="progress-bar" id="prog"></div>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="panel hero-panel">
+  <div class="hero-bg"></div>
+  <div class="hero-dots"></div>
+
+  <div class="float-badge">
+    <span class="fbn">No.1</span>
+    <span class="fbs">北陸<br>大規模修繕<br>施工頭数</span>
+  </div>
+
+  <div class="scroll-hint">
+    <div class="sh-line"></div>
+    <span class="sh-txt">SCROLL</span>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">★ 北陸エリア 大規模修繕 施工頭数 No.1 ★</div>
+    <h1 class="hero-h1">
+      北陸で一番、<br>
+      あなたの建物を<br>
+      <em>守り続ける。</em>
+    </h1>
+    <p class="hero-sub">
+      創業56年。平均年収700万円。<br>
+      ベンツ貸出・GFCリゾート・SUV社用車。<br>
+      北陸No.1企業で、あなたのキャリアを築こう。
+    </p>
+    <div class="hero-cta">
+      <a href="#recruit" class="hcta-main">📢 採用情報を見る</a>
+      <a href="#contact" class="hcta-sub">無料相談・お見積り</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ STATS ══════════════ -->
+<div class="stats-panel">
+  <div class="stats-grid">
+    <div class="stat-block s-hl sr" data-d="1">
+      <div class="sv">No<span class="su">.1</span></div>
+      <div class="sl">北陸 大規模修繕<br>施工頭数</div>
+    </div>
+    <div class="stat-block sr" data-d="2">
+      <div class="sv">56<span class="su">年</span></div>
+      <div class="sl">創業からの年数</div>
+    </div>
+    <div class="stat-block sr" data-d="3">
+      <div class="sv">700<span class="su">万</span></div>
+      <div class="sl">社員平均年収（円）</div>
+    </div>
+    <div class="stat-block sr" data-d="4">
+      <div class="sv">10<span class="su">年</span></div>
+      <div class="sl">アフター保証</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ NO.1 ══════════════ -->
+<section class="csec no1-sec" id="no1">
+  <div class="stag sr">Our Pride</div>
+  <div class="no1-num-block sr" data-d="1">
+    <span class="no1-num">No.1</span>
+    <p class="no1-label">北陸エリア 大規模修繕 施工頭数</p>
+    <p class="no1-caption">北陸3県（石川・富山・福井）における<br>大規模修繕工事の施工棟数 地域最多</p>
+  </div>
+  <div class="no1-bullets">
+    <div class="no1-bul sr" data-d="1">
+      <h4>圧倒的な施工棟数</h4>
+      <p>創業56年で積み上げた500棟超の実績。北陸で最も多くのオーナー様から選ばれ続けています。</p>
+    </div>
+    <div class="no1-bul sr" data-d="2">
+      <h4>地域密着の信頼</h4>
+      <p>金沢を本拠地に、北陸の管理組合・オーナー様と長期的な信頼関係を構築。リピート・紹介案件が全体の7割。</p>
+    </div>
+    <div class="no1-bul sr" data-d="3">
+      <h4>10年アフター保証</h4>
+      <p>1・3・5・7・10年の定期点検と無償対応制度で、北陸No.1の理由がここにあります。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ ABOUT ══════════════ -->
+<section class="csec about-sec" id="about">
+  <div class="stag sr">About KBM</div>
+  <h2 class="stitle sr" data-d="1">創業56年。<br>北陸の建物を守る<br>地域No.1企業。</h2>
+  <div class="sdiv sr" data-d="2"></div>
+  <div class="founding-row sr" data-d="3">
+    <div class="fr-num">56</div>
+    <div class="fr-txt"><strong>年の歴史と実績</strong><br>創業以来、北陸エリアのビル・マンションに寄り添い続けています</div>
+  </div>
+  <p class="slead sr" data-d="4">
+    株式会社KBMは建築・土木のリニューアル工事を専門とし、北陸を中心に大規模修繕施工頭数No.1の実績を誇ります。「社業を通じて人間的成長を目指す」という理念のもと、建物の長期活用と地域社会への貢献を使命として取り組んでいます。
+  </p>
+</section>
+
+<!-- ══════════════ RECRUIT ══════════════ -->
+<section class="csec" style="background:var(--ink);" id="recruit">
+  <div class="stag sr">Recruit</div>
+  <h2 class="stitle sr" data-d="1">あなたの力を、<br>北陸No.1企業で活かせ。</h2>
+  <div class="sdiv sr" data-d="2"></div>
+  <p class="slead sr" data-d="3">創業56年、北陸で最多の施工実績を誇るKBMで、キャリアを築きませんか。業界トップクラスの待遇で、共に成長できる仲間を募集しています。</p>
+
+  <!-- 年収ハイライト -->
+  <div class="salary-hero sr" data-d="1">
+    <div class="sh-lbl">社員平均年収</div>
+    <div class="sh-num">700<span class="sh-unt">万円</span></div>
+    <div class="sh-note">※正社員全体の平均値（2024年度実績）</div>
+    <div class="sh-desc">建設業の全国平均年収（約490万円）を大幅に上回る700万円。実力と経験に応じた昇給・賞与制度で、頑張りが収入に直結します。</div>
+  </div>
+
+  <p style="font-size:0.65rem;color:var(--txt2);margin-bottom:8px;letter-spacing:2px;" class="sr">— 初任給（新卒）</p>
+  <div class="esalary sr">
+    <div class="esc"><div class="esc-l">高卒</div><div class="esc-a">205,000</div><div class="esc-u">円（月給）</div></div>
+    <div class="esc"><div class="esc-l">短大・専門卒</div><div class="esc-a">210,000</div><div class="esc-u">円（月給）</div></div>
+    <div class="esc"><div class="esc-l">大卒</div><div class="esc-a">240,000</div><div class="esc-u">円（月給）</div></div>
+  </div>
+
+  <div class="job-crd sr" data-d="1">
+    <div class="jc-hd"><span class="jc-ico">🔧</span>工事部（現場作業）</div>
+    <div class="jc-row"><span class="jc-k">勤務地</span><span class="jc-v">金沢市（本社）</span></div>
+    <div class="jc-row"><span class="jc-k">雇用形態</span><span class="jc-v">正社員</span></div>
+    <div class="jc-row"><span class="jc-k">勤務時間</span><span class="jc-v">8:00〜17:00（残業 月約10時間）</span></div>
+    <div class="jc-row"><span class="jc-k">休日</span><span class="jc-v">年間102日</span></div>
+    <div class="jc-row"><span class="jc-k">賞与・昇給</span><span class="jc-v">賞与年2回・昇給年1回</span></div>
+    <div class="jc-row"><span class="jc-k">社用車</span><span class="jc-v">🚙 SUV（全員支給）</span></div>
+  </div>
+
+  <div class="job-crd sr" data-d="2">
+    <div class="jc-hd"><span class="jc-ico">💼</span>営業部（ルート営業）</div>
+    <div class="jc-row"><span class="jc-k">業務内容</span><span class="jc-v">ルート営業・調査・見積作成など</span></div>
+    <div class="jc-row"><span class="jc-k">勤務地</span><span class="jc-v">金沢市（本社）</span></div>
+    <div class="jc-row"><span class="jc-k">雇用形態</span><span class="jc-v">正社員</span></div>
+    <div class="jc-row"><span class="jc-k">勤務時間</span><span class="jc-v">8:00〜17:00（残業 月約10時間）</span></div>
+    <div class="jc-row"><span class="jc-k">休日</span><span class="jc-v">年間102日</span></div>
+    <div class="jc-row"><span class="jc-k">社用車</span><span class="jc-v">🚙 SUV（営業車として支給）</span></div>
+  </div>
+
+  <a href="#contact" class="recruit-cta sr" data-d="3">
+    📢 採用エントリーはこちら →
+  </a>
+</section>
+
+<!-- ══════════════ WELFARE ══════════════ -->
+<section class="csec benefits-sec" id="welfare">
+  <div class="stag sr">Welfare & Benefits</div>
+  <h2 class="stitle sr" data-d="1">KBMで働くことの<br><span style="color:var(--rust);">特別な価値</span></h2>
+  <div class="sdiv sr" data-d="2"></div>
+  <p class="slead sr" data-d="3" style="color:#444;">年収だけじゃない。業界随一の福利厚生が揃っています。</p>
+  <div class="bcards">
+    <div class="bcard bp sr-l" data-d="1">
+      <div class="bc-ic">🚗</div>
+      <div class="bc-tl">ベンツ貸し出し制度</div>
+      <div class="bc-ds">成果を出した社員へのインセンティブとして、メルセデス・ベンツを業務・プライベートで利用できる特別制度。</div>
+      <span class="bc-hl">社員限定 プレミアム特典</span>
+    </div>
+    <div class="bcard bp sr-r" data-d="2">
+      <div class="bc-ic">🏔️</div>
+      <div class="bc-tl">GFCリゾート施設 利用可能</div>
+      <div class="bc-ds">会員制リゾート施設「GFC」を社員・家族で利用可能。全国の一流リゾートで、日常を忘れるバカンスを。</div>
+      <span class="bc-hl">家族同伴利用OK</span>
+    </div>
+    <div class="bcard bp sr-l" data-d="3">
+      <div class="bc-ic">🚙</div>
+      <div class="bc-tl">社用車は全員SUV</div>
+      <div class="bc-ds">営業・現場担当者へ支給される社用車は全車SUV。快適で機能的なクルマで北陸を駆け回ります。</div>
+      <span class="bc-hl">全員SUV支給</span>
+    </div>
+    <div class="bcard sr-r" data-d="4">
+      <div class="bc-ic">📚</div>
+      <div class="bc-tl">資格取得費用 全額負担</div>
+      <div class="bc-ds">施工管理技士・建築士など業務関連資格の受験費用・教材費を全額負担。スキルアップを全力バックアップ。</div>
+    </div>
+    <div class="bcard sr-l" data-d="5">
+      <div class="bc-ic">🏆</div>
+      <div class="bc-tl">永年勤続表彰 ＋ 研修旅行</div>
+      <div class="bc-ds">長年の貢献を節目ごとに表彰。年1回の研修旅行や住宅・家族手当など各種手当も完備。</div>
+    </div>
+  </div>
+
+  <!-- 採用誘導 -->
+  <a href="#recruit" style="display:flex;align-items:center;justify-content:center;gap:8px;background:var(--gold);color:var(--ink);padding:17px;font-size:0.92rem;font-weight:700;letter-spacing:1px;margin-top:20px;position:relative;overflow:hidden;" class="sr" data-d="1">
+    📢 採用情報をもっと見る →
+    <span style="position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.15),transparent);transform:translateX(-100%);animation:shimmer 2.5s infinite;"></span>
+  </a>
+</section>
+
+<!-- ══════════════ GFC RESORT ══════════════ -->
+<section class="csec gfc-sec">
+  <div class="stag sr">Member's Resort</div>
+  <h2 class="stitle sr" data-d="1">GFC会員制<br>リゾート施設</h2>
+  <div class="sdiv sr" data-d="2"></div>
+  <p class="slead sr" data-d="3">KBMの社員は会員制リゾート施設「GFC」を特別料金で利用できます。全国の一流リゾートで仕事の疲れをリフレッシュ。家族も一緒に特別な時間を。</p>
+  <div class="gfc-box sr" data-d="1">
+    <div class="gfc-tag">MEMBER'S BENEFIT</div>
+    <div class="gfc-lgo">GFC</div>
+    <div class="gfc-fn">GOLDEN FOREST CLUB</div>
+    <div class="gfc-fts">
+      <div class="gfc-ft"><span class="gft-ic">🏨</span><span class="gft-tx">全国一流リゾートホテルが利用可能</span></div>
+      <div class="gfc-ft"><span class="gft-ic">👨‍👩‍👧</span><span class="gft-tx">家族・パートナー同伴での利用OK</span></div>
+      <div class="gfc-ft"><span class="gft-ic">🌿</span><span class="gft-tx">軽井沢・那須・京都など主要エリア</span></div>
+      <div class="gfc-ft"><span class="gft-ic">💳</span><span class="gft-tx">社員特別割引料金で満喫</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ SERVICES ══════════════ -->
+<section class="csec" style="background:var(--ink2);" id="services">
+  <div class="stag sr">Our Services</div>
+  <h2 class="stitle sr" data-d="1">総合的な修繕・改善工事</h2>
+  <div class="sdiv sr" data-d="2"></div>
+  <!-- accordion -->
+  <div id="svc-list" style="margin-top:20px;">
+    <!-- items injected by JS for cleanliness -->
+  </div>
+</section>
+
+<!-- ══════════════ PROCESS ══════════════ -->
+<section class="csec proc-sec" id="process">
+  <div class="stag sr">How We Work</div>
+  <h2 class="stitle sr" data-d="1">調査・診断から<br>アフターケアまで</h2>
+  <div class="sdiv sr" data-d="2"></div>
+  <p class="slead sr" data-d="3">居住者様や近隣への配慮を徹底し、安全で円滑な工事体制を整えます。</p>
+  <div class="proc-vl sr" data-d="1">
+    <div class="pv"><div class="pv-dot"><span class="pv-n">01</span></div><div class="pv-t">現地調査・診断</div><p class="pv-d">専門スタッフが建物を詳細に調査し、劣化状況を診断</p></div>
+    <div class="pv"><div class="pv-dot"><span class="pv-n">02</span></div><div class="pv-t">工事プラン提案</div><p class="pv-d">診断結果をもとに最適な工事計画と見積りを提案</p></div>
+    <div class="pv"><div class="pv-dot"><span class="pv-n">03</span></div><div class="pv-t">工事着工</div><p class="pv-d">居住者への説明・近隣配慮を徹底しながら安全施工</p></div>
+    <div class="pv"><div class="pv-dot"><span class="pv-n">04</span></div><div class="pv-t">完成・引渡し</div><p class="pv-d">施工後の品質確認・検査を経て丁寧にお引渡し</p></div>
+    <div class="pv"><div class="pv-dot"><span class="pv-n">05</span></div><div class="pv-t">10年アフターケア</div><p class="pv-d">1・3・5・7・10年の定期点検で建物の価値を守る</p></div>
+  </div>
+</section>
+
+<!-- ══════════════ REPAIR GUIDE ══════════════ -->
+<section class="csec repair-sec">
+  <div class="stag sr">Repair Guide</div>
+  <h2 class="stitle sr" data-d="1">修繕の目安</h2>
+  <div class="sdiv sr" data-d="2"></div>
+  <p class="slead sr" data-d="3">建物の劣化は部位ごとに進行度が異なります。計画的な修繕が重要です。</p>
+  <div class="rcards">
+    <div class="rcard sr-l" data-d="1">
+      <div class="rb">1回目の修繕</div>
+      <h3>主に外部の修繕が中心</h3>
+      <ul class="rlist">
+        <li>外壁塗装・タイル補修</li>
+        <li>屋上・バルコニー防水</li>
+        <li>シーリング（コーキング）打替え</li>
+        <li>鉄部塗装</li>
+        <li>共用廊下・階段の補修</li>
+      </ul>
+    </div>
+    <div class="rcard sr-r" data-d="2">
+      <div class="rb">2回目以降の修繕</div>
+      <h3>機能向上・改善工事の比重増加</h3>
+      <ul class="rlist">
+        <li>給排水・電気設備の更新</li>
+        <li>エントランス・共用部の改修</li>
+        <li>バリアフリー化（段差解消・手すり）</li>
+        <li>耐震補強工事</li>
+        <li>省エネ設備への更新</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ AFTER SERVICE ══════════════ -->
+<section class="csec after-sec">
+  <div class="stag sr">After Service</div>
+  <h2 class="stitle sr" data-d="1">10年間の<br>アフターメンテナンス</h2>
+  <div class="sdiv sr" data-d="2"></div>
+  <p class="slead sr" data-d="3">工事完了後も定期点検を実施し、不具合があれば無償対応。10年目の点検終了をもって「本当のお引渡し」と考えています。</p>
+  <div class="at-tl sr" data-d="1">
+    <div class="at-it"><div class="at-dot"></div><div class="at-yr">1年目</div><div class="at-tx">工事完了後の初回定期点検。不具合の早期発見・無償対応</div></div>
+    <div class="at-it"><div class="at-dot"></div><div class="at-yr">3年目</div><div class="at-tx">中間点検。防水・塗装等の経過状況を確認</div></div>
+    <div class="at-it"><div class="at-dot"></div><div class="at-yr">5年目</div><div class="at-tx">施工箇所の詳細点検。次期修繕に向けた提案も実施</div></div>
+    <div class="at-it"><div class="at-dot"></div><div class="at-yr">7年目</div><div class="at-tx">劣化状況の総合確認。長期計画の見直しをサポート</div></div>
+    <div class="at-it"><div class="at-dot"></div><div class="at-yr">10年目</div><div class="at-tx">最終定期点検</div></div>
+    <div class="at-fin">✓ 10年目の点検終了をもって「本当のお引渡し」</div>
+  </div>
+</section>
+
+<!-- ══════════════ PHILOSOPHY ══════════════ -->
+<div class="phil-sec">
+  <div class="phil-q sr">― 経営理念 ―</div>
+  <p class="phil-t sr" data-d="1">「社業を通じて<br>人間的成長を目指す」<br>建物の長期活用と<br>社会貢献を使命として。</p>
+  <p class="phil-s sr" data-d="2">株式会社KBM 創業56年</p>
+</div>
+
+<!-- ══════════════ CONTACT ══════════════ -->
+<section class="contact-sec" id="contact">
+  <div class="stag" style="color:var(--rust);">Contact</div>
+  <h2 class="stitle sr" data-d="1">お気軽に<br>ご相談ください</h2>
+  <div style="width:36px;height:3px;background:var(--rust);margin:14px 0 18px;" class="sr" data-d="2"></div>
+  <p class="slead sr" data-d="3">建物の劣化診断・工事のご相談・お見積りは無料です。北陸No.1の実績で、あなたの建物を守ります。</p>
+  <div class="ctns">
+    <a href="tel:0762421494" class="ctn ct-tel sr" data-d="1">📞 076-242-1494</a>
+    <a href="/cdn-cgi/l/email-protection#a8c1c6cec7e8c3cac5cfdac7ddd886cbc786c2d8" class="ctn ct-mail sr" data-d="2">✉️ メールで相談する</a>
+    <a href="#recruit" class="ctn ct-entry sr" data-d="3">📢 採用エントリー</a>
+  </div>
+  <p style="margin-top:20px;font-size:0.62rem;color:var(--txt2);letter-spacing:1.5px;" class="sr" data-d="4">本社：石川県金沢市 / 受付時間：平日 8:00〜17:00</p>
+</section>
+
+<footer>
+  <div class="fl">KBM</div>
+  <div>
+    株式会社KBM © 2024 All Rights Reserved.<br>
+    創業56年 | 北陸エリア大規模修繕施工頭数No.1<br>
+    石川県金沢市（本社）
+  </div>
+</footer>
+<div class="footer-pad"></div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+/* ── Services accordion data ── */
+const svcs = [
+  { n:'01', ic:'🏗️', t:'外壁・防水工事', d:'劣化した外壁の塗装・補修・シーリング打替えから、屋上・バルコニーの防水工事まで。雨水の浸入を防ぎ、建物本来の性能を回復させます。' },
+  { n:'02', ic:'⚙️', t:'設備改修工事', d:'給排水・電気設備の更新から、エントランス・共用部のリニューアルまで。社会変化や法改正に対応した機能向上工事を提案します。' },
+  { n:'03', ic:'🛡️', t:'躯体補修・耐震補強', d:'コンクリートの中性化・ひび割れ・鉄筋露出などを診断・補修。耐震性能の向上により、建物の安全性と資産価値を高めます。' },
+  { n:'04', ic:'♿', t:'バリアフリー化', d:'段差解消・手すり設置・エレベーター設置計画など、高齢化社会に対応したユニバーサルデザインへのリニューアルを支援します。' },
+  { n:'05', ic:'🔍', t:'調査・診断', d:'専門スタッフが建物を詳細に調査。赤外線・打診・目視などの診断手法を組み合わせ、最適な工事プランを提案します。' },
+  { n:'06', ic:'📋', t:'長期修繕計画', d:'30年以上を見据えた長期修繕計画の作成・見直しをサポート。修繕積立金の適正化と計画的な建物保全をお手伝いします。' },
+];
+const list = document.getElementById('svc-list');
+svcs.forEach((s, i) => {
+  const item = document.createElement('div');
+  item.style.cssText = 'margin-bottom:2px;border-left:4px solid rgba(200,169,110,0.2);background:rgba(255,255,255,0.03);overflow:hidden;transition:border-color .3s;';
+  item.innerHTML = `
+    <div style="display:flex;align-items:center;gap:12px;padding:16px 14px;cursor:pointer;">
+      <span style="font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:rgba(200,169,110,0.3);width:26px;flex-shrink:0;">${s.n}</span>
+      <span style="font-size:1.2rem;">${s.ic}</span>
+      <span style="font-size:0.88rem;font-weight:600;flex:1;color:#fff;">${s.t}</span>
+      <span class="arr" style="font-size:0.65rem;color:rgba(255,255,255,0.4);transition:transform .3s;">▼</span>
+    </div>
+    <div class="sb" style="max-height:0;overflow:hidden;transition:max-height .4s ease;">
+      <div style="padding:0 14px 16px 52px;font-size:0.78rem;line-height:1.9;color:rgba(255,255,255,0.65);font-weight:300;">${s.d}</div>
+    </div>`;
+  item.classList.add('sr');
+  item.dataset.d = String(i + 1);
+  const hd = item.querySelector('div');
+  const sb = item.querySelector('.sb');
+  const arr = item.querySelector('.arr');
+  hd.addEventListener('click', () => {
+    const open = sb.style.maxHeight !== '0px' && sb.style.maxHeight !== '';
+    document.querySelectorAll('.sb').forEach(b => { b.style.maxHeight='0'; b.previousElementSibling.querySelector('.arr').style.transform=''; b.parentElement.style.borderLeftColor='rgba(200,169,110,0.2)'; });
+    if (!open) { sb.style.maxHeight = sb.scrollHeight+'px'; arr.style.transform='rotate(180deg)'; item.style.borderLeftColor='#c8a96e'; }
+  });
+  list.appendChild(item);
+});
+
+/* ── Scroll reveal ── */
+// まずすべての要素を見える状態にしてから、アニメーションを有効化
+const allSR = document.querySelectorAll('.sr, .sr-l, .sr-r, .sr-s');
+
+// IntersectionObserver が使えるか確認してからアニメーション有効化
+if ('IntersectionObserver' in window) {
+  // body に js-ready クラスを付けてアニメーション有効化
+  document.body.classList.add('js-ready');
+
+  const revObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const d = parseFloat(e.target.dataset.d || 0);
+        setTimeout(() => e.target.classList.add('up'), d * 70);
+        revObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
+
+  allSR.forEach(el => {
+    // 画面内にすでに見えている要素はすぐ表示
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+      el.classList.add('up');
+    } else {
+      revObs.observe(el);
+    }
+  });
+} else {
+  // IntersectionObserver 非対応ブラウザはすべて即表示
+  allSR.forEach(el => el.classList.add('up'));
+}
+
+/* ── Progress bar ── */
+const prog = document.getElementById('prog');
+window.addEventListener('scroll', () => {
+  const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+  prog.style.width = pct + '%';
+}, { passive: true });
+
+  // Topbar fade on scroll
+  const tb = document.querySelector('.topbar');
+  window.addEventListener('scroll', () => {
+    tb.style.background = window.scrollY > 40
+      ? 'rgba(10,22,40,1)'
+      : 'rgba(10,22,40,0.92)';
+  }, { passive: true });
+</script>
+</body>
+</html>
