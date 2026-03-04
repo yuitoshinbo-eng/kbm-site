@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="北陸No.1の株式会社KBM。平均年収700万円・年間休日120日。高卒・専門卒・大卒 採用募集中。採用エントリー受付中。">
+  <meta name="google-site-verification" content="kraQySds0JXq73ihSeO7qyeOO3RKFj5nXSGJEL1yIok">
+  <meta property="og:title" content="株式会社KBM採用情報 | 北陸No.1 平均年収700万円">
+  <meta property="og:description" content="北陸No.1。年収700万・年休120日。高卒〜大卒 募集中。">
+  <meta property="og:type" content="website">
+  <title>株式会社KBM | 採用情報 – 北陸No.1 大規模修繕</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600;700;900&family=Noto+Sans+JP:wght@300;400;500;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --nv:#08152a;--nv2:#0f2040;--nv3:#162b52;
+      --gd:#c9973a;--gd2:#e8b84a;
+      --cr:#f2ede4;--wh:#fff;--ink:#1a1a1a;
+      --t1:rgba(255,255,255,.82);--t2:rgba(255,255,255,.42);
+    }
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{font-family:'Noto Sans JP',sans-serif;background:var(--nv);color:var(--wh);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+    a{text-decoration:none;color:inherit;}
+    img{max-width:100%;display:block;}
+
+    /* ── NAV ── */
+    nav{position:fixed;top:0;left:0;right:0;z-index:900;height:56px;
+      display:flex;align-items:center;justify-content:space-between;padding:0 5%;
+      background:rgba(8,21,42,.96);backdrop-filter:blur(16px);
+      border-bottom:1px solid rgba(201,151,58,.2);}
+    .nl{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:4px;color:var(--gd);line-height:1;}
+    .nl small{font-family:'Noto Sans JP',sans-serif;font-size:.38rem;font-weight:300;color:var(--t2);display:block;letter-spacing:2px;}
+    .nd{display:flex;align-items:center;gap:20px;}
+    .ndl{display:flex;gap:18px;}
+    .ndl a{font-size:.73rem;font-weight:500;color:var(--t1);letter-spacing:.8px;transition:color .2s;}
+    .ndl a:hover{color:var(--gd2);}
+    .ne{background:var(--gd);color:var(--nv);padding:9px 16px;font-size:.73rem;font-weight:700;letter-spacing:1px;white-space:nowrap;}
+    @media(max-width:768px){.ndl{display:none;}.ne{padding:8px 12px;font-size:.68rem;}}
+
+    /* ── HERO ── */
+    .hero{min-height:100svh;position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding-top:56px;overflow:hidden;}
+    .hbg{position:absolute;inset:0;
+      background:linear-gradient(180deg,rgba(8,21,42,.15) 0%,rgba(8,21,42,.45) 35%,rgba(8,21,42,.97) 100%),
+      url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400&q=80') center/cover no-repeat;}
+    .hbadge{position:absolute;top:72px;right:5%;width:82px;height:82px;border-radius:50%;
+      background:var(--gd);color:var(--nv);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+      animation:bdg 3s ease-in-out infinite;z-index:2;}
+    @keyframes bdg{0%,100%{box-shadow:0 0 0 6px rgba(201,151,58,.22),0 0 0 12px rgba(201,151,58,.08);}
+      50%{box-shadow:0 0 0 10px rgba(201,151,58,.28),0 0 0 20px rgba(201,151,58,.11);}}
+    .hbadge .bn{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;line-height:1;}
+    .hbadge .bs{font-size:.35rem;font-weight:700;letter-spacing:.4px;line-height:1.7;}
+    .hcon{position:relative;z-index:2;padding:0 5% 44px;}
+    .hey{display:inline-flex;align-items:center;gap:8px;background:rgba(201,151,58,.14);border:1px solid rgba(201,151,58,.42);
+      padding:6px 14px;font-size:.58rem;font-weight:700;letter-spacing:2.5px;color:var(--gd2);margin-bottom:18px;}
+    .hh1{font-family:'Noto Serif JP',serif;font-size:clamp(1.8rem,8vw,3rem);font-weight:900;line-height:1.28;margin-bottom:16px;}
+    .hh1 em{font-style:normal;color:var(--gd2);}
+    .hld{font-size:.83rem;line-height:2;color:var(--t1);font-weight:300;margin-bottom:26px;}
+    .hst{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.07);margin-bottom:24px;}
+    .hs{padding:13px 8px;text-align:center;background:rgba(8,21,42,.65);}
+    .hsn{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--gd2);line-height:1;}
+    .hsu{font-size:.58rem;color:var(--t2);margin-top:2px;}
+    .hbtn{display:flex;flex-direction:column;gap:10px;}
+    .bm{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--gd);color:var(--nv);
+      padding:17px;font-size:.92rem;font-weight:700;letter-spacing:1.5px;position:relative;overflow:hidden;}
+    .bm::after,.shm::after{content:'';position:absolute;inset:0;
+      background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);
+      transform:translateX(-100%);animation:shm 2.5s 1s infinite;}
+    @keyframes shm{to{transform:translateX(100%);}}
+    .bs2{display:flex;align-items:center;justify-content:center;gap:8px;
+      border:1.5px solid rgba(255,255,255,.3);color:var(--wh);padding:15px;font-size:.82rem;font-weight:300;letter-spacing:1px;}
+    .scrl{position:absolute;bottom:64px;left:50%;transform:translateX(-50%);
+      display:flex;flex-direction:column;align-items:center;gap:4px;z-index:2;}
+    .scrl-b{width:1px;height:36px;background:linear-gradient(to bottom,var(--gd),transparent);animation:sb 1.8s ease-in-out infinite;}
+    @keyframes sb{0%,100%{opacity:.5;}50%{opacity:1;}}
+
+    /* ── SECTIONS ── */
+    section{padding:68px 5%;}
+    .stag{font-size:.55rem;letter-spacing:5px;color:var(--gd);text-transform:uppercase;margin-bottom:8px;}
+    .stitle{font-family:'Noto Serif JP',serif;font-size:clamp(1.4rem,6vw,2rem);font-weight:700;line-height:1.35;margin-bottom:10px;}
+    .sdiv{width:36px;height:3px;background:var(--gd);margin:14px 0 18px;}
+    .slead{font-size:.82rem;line-height:2;color:var(--t1);font-weight:300;}
+    .slt{background:var(--cr);color:var(--ink);}
+    .slt .stag{color:#7a5f28;}.slt .stitle{color:var(--ink);}
+    .slt .sdiv{background:#7a5f28;}.slt .slead{color:#505050;}
+    .sd2{background:var(--nv2);}
+
+    /* STRIP */
+    .strip{display:grid;grid-template-columns:repeat(2,1fr);}
+    .sp{padding:20px 14px;text-align:center;
+      border-right:1px solid rgba(201,151,58,.12);border-bottom:1px solid rgba(201,151,58,.12);
+      background:var(--gd);}
+    .sp:nth-child(2n){border-right:none;}
+    .sp.hl{background:var(--nv);}
+    .spn{font-family:'Bebas Neue',sans-serif;font-size:2.6rem;color:var(--nv);line-height:1;}
+    .sp.hl .spn{color:var(--gd);}
+    .spl{font-size:.58rem;font-weight:700;letter-spacing:1px;color:rgba(8,21,42,.65);margin-top:3px;}
+    .sp.hl .spl{color:var(--t2);}
+
+    /* WORKS */
+    .wkgrid{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:20px;}
+    .wkimg{width:100%;height:135px;object-fit:cover;}
+    .wkcap{background:rgba(8,21,42,.85);padding:7px 10px;font-size:.62rem;color:var(--gd);letter-spacing:1px;}
+
+    /* WHY */
+    .wyl{display:flex;flex-direction:column;gap:11px;margin-top:20px;}
+    .wc{background:rgba(255,255,255,.04);border-left:4px solid var(--gd);padding:15px 13px;}
+    .wch{font-size:.87rem;font-weight:700;color:var(--gd2);margin-bottom:5px;}
+    .wcp{font-size:.76rem;line-height:1.92;color:var(--t1);font-weight:300;}
+
+    /* TARGET */
+    .tgl{display:flex;flex-direction:column;gap:11px;margin-top:20px;}
+    .tc{background:var(--wh);border-top:4px solid var(--gd);padding:17px 15px;}
+    .tclv{display:inline-block;background:var(--gd);color:var(--nv);font-size:.56rem;font-weight:700;padding:3px 10px;letter-spacing:1.5px;margin-bottom:9px;}
+    .tch{font-family:'Noto Serif JP',serif;font-size:.93rem;font-weight:700;color:var(--ink);margin-bottom:7px;}
+    .tcp{font-size:.75rem;line-height:1.9;color:#444;font-weight:300;}
+
+    /* SALARY */
+    .salblk{background:var(--gd);color:var(--nv);padding:24px 18px;position:relative;overflow:hidden;margin-bottom:17px;}
+    .salblk::after{content:'¥';position:absolute;right:8px;top:50%;transform:translateY(-50%);
+      font-family:'Bebas Neue',sans-serif;font-size:7rem;color:rgba(8,21,42,.07);line-height:1;}
+    .sll{font-size:.58rem;font-weight:700;letter-spacing:3px;margin-bottom:3px;}
+    .sln{font-family:'Bebas Neue',sans-serif;font-size:4.6rem;line-height:1;}
+    .slu{font-size:1.05rem;font-weight:700;}
+    .slnt{font-size:.56rem;margin-top:3px;opacity:.65;}
+    .sld{font-size:.76rem;line-height:1.9;margin-top:10px;opacity:.85;}
+    .esal{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid rgba(201,151,58,.25);margin-bottom:20px;}
+    .es{padding:12px 7px;text-align:center;border-right:1px solid rgba(201,151,58,.2);}
+    .es:last-child{border-right:none;}
+    .esl{font-size:.53rem;letter-spacing:1px;color:var(--gd);margin-bottom:3px;}
+    .esn{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--wh);line-height:1;}
+    .esu{font-size:.52rem;color:var(--t2);}
+
+    /* JOB */
+    .job{border:1px solid rgba(201,151,58,.22);background:rgba(255,255,255,.03);padding:17px 15px;margin-bottom:12px;}
+    .jtit{display:flex;align-items:center;gap:10px;font-family:'Noto Serif JP',serif;font-size:.96rem;font-weight:700;
+      padding-bottom:11px;margin-bottom:11px;border-bottom:1px solid rgba(201,151,58,.15);}
+    .jico{width:29px;height:29px;background:var(--gd);color:var(--nv);display:flex;align-items:center;justify-content:center;font-size:.82rem;flex-shrink:0;}
+    .jr{display:flex;gap:10px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:.74rem;}
+    .jr:last-child{border-bottom:none;}
+    .jk{color:var(--gd);width:60px;flex-shrink:0;font-size:.65rem;font-weight:500;}
+    .jv{color:var(--t1);line-height:1.7;font-weight:300;}
+
+    /* WELFARE */
+    .wfg{display:flex;flex-direction:column;gap:12px;margin-top:18px;}
+    .wf{background:var(--wh);border-top:4px solid #7a5f28;padding:17px 15px;position:relative;}
+    .wf.pm{border-top-color:var(--gd);}
+    .wf.pm::before{content:'PREMIUM';position:absolute;top:-1px;right:12px;background:var(--gd);color:var(--nv);
+      font-size:.44rem;font-weight:700;padding:3px 9px;letter-spacing:1.5px;}
+    .wfic{font-size:1.65rem;margin-bottom:7px;}
+    .wft{font-family:'Noto Serif JP',serif;font-size:.92rem;font-weight:700;color:var(--ink);margin-bottom:5px;}
+    .wfd{font-size:.74rem;color:#505050;line-height:1.9;font-weight:300;}
+    .wftg{display:inline-block;background:var(--gd);color:var(--nv);font-size:.56rem;font-weight:700;padding:3px 9px;margin-top:7px;}
+
+    /* GFC */
+    .gfcbox{border:1px solid rgba(201,151,58,.25);background:rgba(255,255,255,.03);padding:20px 15px;margin-top:18px;position:relative;}
+    .gfctg{position:absolute;top:-10px;right:13px;background:var(--gd);color:var(--nv);font-size:.53rem;font-weight:700;padding:3px 11px;letter-spacing:1.5px;}
+    .gfcl{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:var(--gd);letter-spacing:6px;line-height:1;}
+    .gfcfn{font-size:.53rem;color:var(--t2);letter-spacing:3px;margin-bottom:14px;}
+    .gfcgrid{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:12px;}
+    .gl{background:rgba(255,255,255,.04);padding:9px 11px;border-left:3px solid var(--gd);}
+    .gln{font-size:.58rem;font-weight:700;color:var(--gd);margin-bottom:2px;}
+    .gld{font-size:.66rem;color:var(--t1);font-weight:300;line-height:1.6;}
+    .gfcnote{font-size:.67rem;color:var(--t1);line-height:1.88;font-weight:300;}
+
+    /* INTERVIEW */
+    .ivcards{display:flex;flex-direction:column;gap:16px;margin-top:20px;}
+    .ivc{background:var(--wh);overflow:hidden;}
+    .ivcimg{width:100%;height:185px;object-fit:cover;}
+    .ivcb{padding:15px;}
+    .ivcd{font-size:.56rem;letter-spacing:2px;color:#7a5f28;font-weight:700;margin-bottom:3px;}
+    .ivcn{font-family:'Noto Serif JP',serif;font-size:.96rem;font-weight:700;color:var(--ink);margin-bottom:3px;}
+    .ivcy{font-size:.6rem;color:#888;margin-bottom:10px;}
+    .ivcq{font-size:.7rem;font-weight:700;color:var(--ink);margin-bottom:5px;}
+    .ivca{font-size:.74rem;color:#444;line-height:1.9;font-weight:300;}
+
+    /* PRESIDENT */
+    .pres{background:var(--nv2);}
+    .presimg{width:100%;height:260px;object-fit:cover;object-position:top;}
+    .presplate{background:rgba(8,21,42,.9);padding:12px 15px;display:flex;align-items:center;justify-content:space-between;}
+    .ppt{font-family:'Noto Serif JP',serif;font-size:.96rem;font-weight:700;}
+    .pps{font-size:.58rem;color:var(--gd);letter-spacing:1px;}
+    .presq{border-left:4px solid var(--gd);padding:13px 15px;background:rgba(255,255,255,.04);margin:16px 0;}
+    .presqt{font-family:'Noto Serif JP',serif;font-size:.92rem;line-height:1.9;font-weight:600;}
+    .presqa{font-size:.6rem;color:var(--gd);margin-top:8px;letter-spacing:1px;}
+    .prestxt{font-size:.78rem;line-height:2.08;color:var(--t1);font-weight:300;}
+
+    /* PHILOSOPHY */
+    .phil{background:var(--nv);padding:62px 5%;text-align:center;position:relative;overflow:hidden;}
+    .phil::before{content:'KBM';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+      font-family:'Bebas Neue',sans-serif;font-size:14rem;color:rgba(201,151,58,.04);letter-spacing:10px;white-space:nowrap;}
+    .philin{position:relative;z-index:1;}
+    .philq{font-size:.58rem;letter-spacing:4px;color:var(--gd);margin-bottom:15px;}
+    .philt{font-family:'Noto Serif JP',serif;font-size:clamp(1rem,5vw,1.5rem);font-weight:700;line-height:1.88;}
+    .phils{font-size:.6rem;color:var(--t2);margin-top:13px;letter-spacing:2px;}
+
+    /* FORM */
+    .ef{background:var(--gd);color:var(--nv);padding:54px 5%;}
+    .ef .stag{color:rgba(8,21,42,.5);}.ef .stitle{color:var(--nv);}
+    .ef .sdiv{background:var(--nv);}.ef .slead{color:rgba(8,21,42,.75);}
+    .fr{margin-bottom:12px;}
+    .flb{font-size:.67rem;font-weight:700;letter-spacing:.8px;margin-bottom:5px;display:flex;align-items:center;gap:6px;}
+    .rq{background:var(--nv);color:var(--gd);font-size:.48rem;padding:2px 7px;font-weight:700;}
+    .fi,.fsel,.fta{width:100%;padding:13px 15px;background:rgba(255,255,255,.9);color:var(--ink);border:none;
+      font-size:.83rem;font-family:'Noto Sans JP',sans-serif;outline:none;transition:background .2s;-webkit-appearance:none;}
+    .fi:focus,.fsel:focus,.fta:focus{background:var(--wh);}
+    .fta{height:110px;resize:vertical;}
+    .fsel{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23333' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+      background-repeat:no-repeat;background-position:right 13px center;padding-right:34px;}
+    .fchk{display:flex;align-items:flex-start;gap:10px;font-size:.74rem;line-height:1.6;}
+    .fchk input{margin-top:3px;flex-shrink:0;width:16px;height:16px;}
+    .fsub{width:100%;padding:16px;background:var(--nv);color:var(--gd);font-size:.95rem;font-weight:700;
+      letter-spacing:2px;border:none;cursor:pointer;font-family:'Noto Sans JP',sans-serif;
+      margin-top:5px;position:relative;overflow:hidden;}
+    .fsub::after{content:'';position:absolute;inset:0;
+      background:linear-gradient(90deg,transparent,rgba(201,151,58,.15),transparent);
+      transform:translateX(-100%);animation:shm 2.5s infinite;}
+    .fn{font-size:.64rem;color:rgba(8,21,42,.6);margin-top:10px;line-height:1.7;text-align:center;}
+
+    /* CONTACT */
+    .ctsec{background:var(--nv2);padding:62px 5%;text-align:center;}
+    .ctg{display:flex;flex-direction:column;gap:10px;margin-top:20px;}
+    .ctb{display:flex;align-items:center;justify-content:center;gap:10px;padding:15px;font-size:.86rem;font-weight:700;letter-spacing:1px;}
+    .cttel{background:var(--nv);color:var(--gd);border:1.5px solid var(--gd);}
+    .cttel span{font-family:'Bebas Neue',sans-serif;font-size:1.15rem;letter-spacing:2px;}
+    .ctml{background:rgba(255,255,255,.07);color:var(--wh);border:1px solid rgba(255,255,255,.2);}
+    .cten{background:var(--gd);color:var(--nv);position:relative;overflow:hidden;}
+    .cten::after{content:'';position:absolute;inset:0;
+      background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);
+      transform:translateX(-100%);animation:shm 2.5s infinite;}
+    .ctinfo{font-size:.62rem;color:var(--t2);margin-top:15px;line-height:2;letter-spacing:1px;}
+
+    /* FOOTER */
+    footer{background:#030b18;padding:24px 5%;color:var(--t2);font-size:.6rem;letter-spacing:1px;line-height:2;}
+    .ftl{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--gd);letter-spacing:4px;margin-bottom:6px;}
+    .ftlks{display:flex;flex-wrap:wrap;gap:11px;margin:9px 0;}
+    .ftlks a{color:var(--t2);transition:color .2s;}.ftlks a:hover{color:var(--gd);}
+
+    /* PROGRESS */
+    .prog{position:fixed;top:56px;left:0;height:2px;background:var(--gd);width:0%;z-index:901;transition:width .1s linear;}
+
+    /* REVEAL */
+    .rv,.rvl,.rvr{transition:opacity .65s cubic-bezier(.16,1,.3,1),transform .65s cubic-bezier(.16,1,.3,1);}
+    .on .rv{opacity:0;transform:translateY(26px);}
+    .on .rv.in{opacity:1;transform:none;}
+    .on .rvl{opacity:0;transform:translateX(-22px);}
+    .on .rvl.in{opacity:1;transform:none;}
+    .on .rvr{opacity:0;transform:translateX(22px);}
+    .on .rvr.in{opacity:1;transform:none;}
+    [data-d="1"]{transition-delay:.06s;}[data-d="2"]{transition-delay:.12s;}
+    [data-d="3"]{transition-delay:.18s;}[data-d="4"]{transition-delay:.24s;}
+    [data-d="5"]{transition-delay:.30s;}
+  </style>
+</head>
+<body>
+<div class="prog" id="prog"></div>
+
+<!-- NAV -->
+<nav id="tnav">
+  <div class="nl">KBM<small>株式会社KBM｜創業56年</small></div>
+  <div class="nd">
+    <div class="ndl">
+      <a href="#about">企業情報</a><a href="#recruit">採用情報</a>
+      <a href="#welfare">福利厚生</a><a href="#interview">社員の声</a><a href="#entry">エントリー</a>
+    </div>
+    <a href="#entry" class="ne">採用エントリー</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hbg"></div>
+  <div class="hbadge"><span class="bn">No.1</span><span class="bs">北陸<br>大規模修繕<br>施工頭数</span></div>
+  <div class="scrl"><div class="scrl-b"></div><span style="font-size:.47rem;letter-spacing:3px;color:var(--t2);">SCROLL</span></div>
+  <div class="hcon">
+    <div class="hey">★ 北陸エリア 大規模修繕 施工頭数 No.1 ★</div>
+    <h1 class="hh1">少数精鋭で<br>北陸を動かす、<br><em>それがKBMだ。</em></h1>
+    <p class="hld">社員20人・売上10億円。<br>一人当たりの生産性は業界平均の約3倍。<br>だから、<strong>平均年収700万円</strong>が実現できる。</p>
+    <div class="hst">
+      <div class="hs"><div class="hsn">700<span style="font-size:.9rem;">万</span></div><div class="hsu">社員平均年収</div></div>
+      <div class="hs"><div class="hsn">120<span style="font-size:.9rem;">日</span></div><div class="hsu">年間休日</div></div>
+      <div class="hs"><div class="hsn">56<span style="font-size:.9rem;">年</span></div><div class="hsu">創業年数</div></div>
+    </div>
+    <div class="hbtn">
+      <a href="#entry" class="bm">📢 採用エントリーはこちら</a>
+      <a href="#recruit" class="bs2">採用情報を見る →</a>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip">
+  <div class="sp hl rv" data-d="1"><div class="spn">No.1</div><div class="spl">北陸 大規模修繕<br>施工頭数</div></div>
+  <div class="sp rv" data-d="2"><div class="spn">20<span style="font-size:1.1rem;">名</span></div><div class="spl">少数精鋭の社員数</div></div>
+  <div class="sp rv" data-d="3"><div class="spn">10<span style="font-size:1.1rem;">億</span></div><div class="spl">年間売上高</div></div>
+  <div class="sp hl rv" data-d="4"><div class="spn">120<span style="font-size:1.1rem;">日</span></div><div class="spl">年間休日</div></div>
+</div>
+
+<!-- WORKS -->
+<section id="works" class="sd2">
+  <div class="stag rv">Our Works</div>
+  <h2 class="stitle rv" data-d="1">施工実績</h2>
+  <div class="sdiv rv" data-d="2"></div>
+  <p class="slead rv" data-d="3">北陸エリアのマンション・ビルを中心に、500棟超の大規模修繕工事を手がけてきました。</p>
+  <div class="wkgrid rv" data-d="1">
+    <div>
+      <img class="wkimg" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="外壁修繕工事">
+      <div class="wkcap">外壁塗装・修繕工事</div>
+    </div>
+    <div>
+      <img class="wkimg" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80" alt="大規模修繕現場">
+      <div class="wkcap">大規模修繕 現場管理</div>
+    </div>
+    <div>
+      <img class="wkimg" src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80" alt="マンション修繕">
+      <div class="wkcap">マンション大規模修繕</div>
+    </div>
+    <div>
+      <img class="wkimg" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80" alt="防水工事">
+      <div class="wkcap">防水・外壁総合工事</div>
+    </div>
+  </div>
+  <p style="font-size:.61rem;color:var(--t2);margin-top:9px;">※写真は仮素材。実際の施工写真に差し替え予定。</p>
+</section>
+
+<!-- WHY KBM -->
+<section id="about" style="background:var(--nv);">
+  <div class="stag rv">Why KBM</div>
+  <h2 class="stitle rv" data-d="1">なぜKBMで<br>働くのか。</h2>
+  <div class="sdiv rv" data-d="2"></div>
+  <p class="slead rv" data-d="3">社員20人で売上10億円。この数字が、KBMの強さのすべてを物語っています。</p>
+  <div class="wyl">
+    <div class="wc rv" data-d="1">
+      <div class="wch">📊 一人あたり売上5,000万円 ＝ 業界平均の約3倍</div>
+      <p class="wcp">業界平均が社員一人あたり約1,500万円に対し、KBMは5,000万円。この生産性の高さが平均年収700万円を支えています。</p>
+    </div>
+    <div class="wc rv" data-d="2">
+      <div class="wch">🏆 北陸エリア 大規模修繕 施工頭数No.1</div>
+      <p class="wcp">創業56年で500棟超の実績。北陸で最も多くのオーナー様から選ばれ続けています。リピート・紹介案件が全体の7割を占める圧倒的な信頼の証です。</p>
+    </div>
+    <div class="wc rv" data-d="3">
+      <div class="wch">🚀 少数精鋭だから、早く・大きく成長できる</div>
+      <p class="wcp">仕事が細分化されていないため、若いうちから幅広い業務を担当。現場監督・営業・管理まで経験できる環境が短期間での成長を実現します。</p>
+    </div>
+    <div class="wc rv" data-d="4">
+      <div class="wch">📅 年間休日120日 ＋ 残業少なめ</div>
+      <p class="wcp">年間休日120日・月残業約10時間。稼ぎながら、ちゃんと休める会社です。プライベートも仕事も充実させたい方に最適な環境です。</p>
+    </div>
+  </div>
+</section>
+
+<!-- TARGET -->
+<section id="target" class="slt">
+  <div class="stag rv">Target</div>
+  <h2 class="stitle rv" data-d="1">こんな方を<br>求めています</h2>
+  <div class="sdiv rv" data-d="2"></div>
+  <p class="slead rv" data-d="3">学歴・経験は問いません。建設業未経験でも、一から丁寧に育てます。入社1年目から営業部・工事部どちらでも活躍できます。</p>
+  <div class="tgl">
+    <div class="tc rvl" data-d="1">
+      <div class="tclv">高校卒業</div>
+      <div class="tch">現場でリーダーとして活躍したい方</div>
+      <p class="tcp">工事部では自分で手を動かすのではなく、現場監督として工程・品質・安全を管理・指揮する立場です。資格取得支援が充実しており、施工管理技士を取得しながらキャリアアップできます。営業部でも入社1年目から顧客訪問ができます。</p>
+    </div>
+    <div class="tc rvl" data-d="2">
+      <div class="tclv">専門学校卒業</div>
+      <div class="tch">専門知識を即戦力として活かしたい方</div>
+      <p class="tcp">建築・土木系の専門知識を持つ方は即戦力として期待しています。工事部・営業部どちらでも学んできた知識をすぐに活かせる環境があります。</p>
+    </div>
+    <div class="tc rvl" data-d="3">
+      <div class="tclv">大学卒業</div>
+      <div class="tch">早期にマネジメントを経験したい方</div>
+      <p class="tcp">少数精鋭の環境で、入社1年目から大きな裁量を持って働けます。営業部では提案・見積作成・顧客管理まで幅広く担当。早期にキャリアアップしたい方にぴったりです。</p>
+    </div>
+  </div>
+</section>
+
+<!-- RECRUIT -->
+<section id="recruit" style="background:var(--nv);">
+  <div class="stag rv">Recruit</div>
+  <h2 class="stitle rv" data-d="1">採用情報</h2>
+  <div class="sdiv rv" data-d="2"></div>
+  <div class="salblk rv" data-d="1">
+    <div class="sll">社員平均年収</div>
+    <div class="sln">700<span class="slu">万円</span></div>
+    <div class="slnt">※正社員全体の平均値（2024年度実績）</div>
+    <div class="sld">建設業全国平均（約490万円）を大幅に上回る700万円。実力と経験に応じた昇給・賞与制度で、頑張りが収入に直結します。</div>
+  </div>
+  <p style="font-size:.61rem;color:var(--t2);letter-spacing:2px;margin-bottom:7px;" class="rv">— 初任給（新卒）</p>
+  <div class="esal rv">
+    <div class="es"><div class="esl">高卒</div><div class="esn">205,000</div><div class="esu">円（月給）</div></div>
+    <div class="es"><div class="esl">短大・専門卒</div><div class="esn">210,000</div><div class="esu">円（月給）</div></div>
+    <div class="es"><div class="esl">大卒</div><div class="esn">240,000</div><div class="esu">円（月給）</div></div>
+  </div>
+  <div class="job rv" data-d="1">
+    <div class="jtit"><span class="jico">🔧</span>工事部（現場監督）</div>
+    <div class="jr"><span class="jk">仕事内容</span><span class="jv">大規模修繕工事の現場監督。工程・品質・安全を管理・指揮する立場（自分で手を動かす作業ではありません）</span></div>
+    <div class="jr"><span class="jk">勤務地</span><span class="jv">金沢市（本社）</span></div>
+    <div class="jr"><span class="jk">雇用形態</span><span class="jv">正社員</span></div>
+    <div class="jr"><span class="jk">勤務時間</span><span class="jv">8:00〜17:00（残業 月約10時間）</span></div>
+    <div class="jr"><span class="jk">休日</span><span class="jv">年間120日</span></div>
+    <div class="jr"><span class="jk">賞与・昇給</span><span class="jv">賞与年2回・昇給年1回</span></div>
+    <div class="jr"><span class="jk">社用車</span><span class="jv">支給（2030年までに全車SUV化計画中）</span></div>
+    <div class="jr"><span class="jk">対象</span><span class="jv">高卒・専門卒・大卒 いずれも可</span></div>
+  </div>
+  <div class="job rv" data-d="2">
+    <div class="jtit"><span class="jico">💼</span>営業部（ルート営業）</div>
+    <div class="jr"><span class="jk">仕事内容</span><span class="jv">マンション管理組合・ビルオーナーへのルート営業、現地調査、見積作成など</span></div>
+    <div class="jr"><span class="jk">勤務地</span><span class="jv">金沢市（本社）</span></div>
+    <div class="jr"><span class="jk">雇用形態</span><span class="jv">正社員</span></div>
+    <div class="jr"><span class="jk">勤務時間</span><span class="jv">8:00〜17:00（残業 月約10時間）</span></div>
+    <div class="jr"><span class="jk">休日</span><span class="jv">年間120日</span></div>
+    <div class="jr"><span class="jk">賞与・昇給</span><span class="jv">賞与年2回・昇給年1回</span></div>
+    <div class="jr"><span class="jk">対象</span><span class="jv">高卒・専門卒・大卒 いずれも可</span></div>
+  </div>
+  <a href="#entry" style="display:flex;align-items:center;justify-content:center;gap:8px;background:var(--gd);color:var(--nv);padding:16px;font-size:.92rem;font-weight:700;letter-spacing:1.5px;margin-top:6px;position:relative;overflow:hidden;" class="rv" data-d="3">
+    📢 採用エントリーはこちら →
+    <span style="position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);transform:translateX(-100%);animation:shm 2.5s infinite;"></span>
+  </a>
+</section>
+
+<!-- WELFARE -->
+<section id="welfare" class="slt">
+  <div class="stag rv">Welfare & Benefits</div>
+  <h2 class="stitle rv" data-d="1">福利厚生</h2>
+  <div class="sdiv rv" data-d="2"></div>
+  <p class="slead rv" data-d="3">年収だけじゃない。KBMには社員の生活を豊かにする充実した福利厚生が揃っています。</p>
+  <div class="wfg">
+    <div class="wf pm rvl" data-d="1">
+      <div class="wfic">🚗</div>
+      <div class="wft">メルセデス・ベンツ貸出制度</div>
+      <div class="wfd">成果を出した社員へのインセンティブとして、メルセデス・ベンツを業務・プライベートで利用できる特別制度。頑張りが目に見える形で返ってきます。</div>
+      <span class="wftg">社員限定 プレミアム特典</span>
+    </div>
+    <div class="wf pm rvr" data-d="2">
+      <div class="wfic">🏔️</div>
+      <div class="wft">GFC会員制リゾート施設</div>
+      <div class="wfd">会員制リゾート「GFC」を社員・家族で利用可能。日本各地の一流施設でリフレッシュできます。</div>
+      <span class="wftg">家族同伴利用OK</span>
+    </div>
+    <div class="wf rvl" data-d="3">
+      <div class="wfic">🎂</div>
+      <div class="wft">誕生日祝い</div>
+      <div class="wfd">社員の誕生日をみんなでお祝いする文化があります。一人ひとりを大切にするKBMらしい取り組みです。</div>
+    </div>
+    <div class="wf rvr" data-d="4">
+      <div class="wfic">🚙</div>
+      <div class="wft">社用車（SUV化計画中）</div>
+      <div class="wfd">社用車を支給。2030年までに工事部の全車SUV化を計画中。快適な移動環境の整備を進めています。</div>
+    </div>
+    <div class="wf rvl" data-d="5">
+      <div class="wfic">📚</div>
+      <div class="wft">資格取得費用 全額負担</div>
+      <div class="wfd">施工管理技士・建築士など業務関連資格の受験費用・教材費を全額負担。スキルアップを全力でサポートします。</div>
+    </div>
+    <div class="wf rvr" data-d="1">
+      <div class="wfic">✈️</div>
+      <div class="wft">研修旅行・各種手当</div>
+      <div class="wfd">年1回の研修旅行や住宅手当・家族手当など各種手当を完備。賞与年2回・昇給年1回で頑張りをしっかり評価します。</div>
+    </div>
+  </div>
+
+  <!-- GFC詳細 -->
+  <div class="gfcbox rv" data-d="1">
+    <div class="gfctg">MEMBER'S RESORT</div>
+    <div class="gfcl">GFC</div>
+    <div class="gfcfn">GOLDEN FOREST CLUB — 会員制リゾートクラブ</div>
+    <div class="gfcgrid">
+      <div class="gl"><div class="gln">🌊 兵庫県・淡路島</div><div class="gld">GFC淡路島 GRANDESIA<br>STONE RANGE VILLAS</div></div>
+      <div class="gl"><div class="gln">🌊 福井県・越前</div><div class="gld">GFC越前 PARADESIA<br>日本海を望むリゾート</div></div>
+      <div class="gl"><div class="gln">♨️ 三重県・湯の山</div><div class="gld">GFC湯の山 SPASIA<br>御在所岳麓の天然温泉</div></div>
+      <div class="gl"><div class="gln">🌊 滋賀県・奥琵琶湖</div><div class="gld">GFC奥琵琶湖 LAKESIA<br>琵琶湖北部の湖畔リゾート</div></div>
+      <div class="gl"><div class="gln">🏖️ 和歌山県・白浜</div><div class="gld">GFC白浜 SHIRAHAMA<br>南紀白浜のビーチリゾート</div></div>
+    </div>
+    <p class="gfcnote">社員とその同伴者が各施設に宿泊し、周辺観光・体験を楽しめます。家族・パートナーとの旅行にも利用できます。</p>
+  </div>
+</section>
+
+<!-- INTERVIEW -->
+<section id="interview" class="sd2">
+  <div class="stag rv">Employee Voice</div>
+  <h2 class="stitle rv" data-d="1">社員の声</h2>
+  <div class="sdiv rv" data-d="2"></div>
+  <p class="slead rv" data-d="3">KBMで働く社員のリアルな声をお届けします。</p>
+  <div class="ivcards">
+    <div class="ivc rv" data-d="1">
+      <img class="ivcimg" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80" alt="社員">
+      <div class="ivcb">
+        <div class="ivcd">工事部 / 現場監督</div>
+        <div class="ivcn">T.S（仮）</div>
+        <div class="ivcy">2019年入社・高卒 / 石川県出身</div>
+        <div class="ivcq">入社してよかったことは？</div>
+        <div class="ivca">入社2年目から大型物件の現場監督を任せてもらえました。年収も前職より大幅にアップして生活が安定しました。年間休日120日で、プライベートも充実しています。GFCで家族と越前海岸へ旅行したのは最高の思い出です。</div>
+      </div>
+    </div>
+    <div class="ivc rv" data-d="2">
+      <img class="ivcimg" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80" alt="社員">
+      <div class="ivcb">
+        <div class="ivcd">営業部 / ルート営業</div>
+        <div class="ivcn">M.K（仮）</div>
+        <div class="ivcy">2021年入社・大卒 / 富山県出身</div>
+        <div class="ivcq">職場の雰囲気はどうですか？</div>
+        <div class="ivca">社員数が少ないので全員の顔と名前がわかり、アットホームな雰囲気です。困ったことがあればすぐに相談できます。メルセデスを借りて家族とドライブできる制度もモチベーションになっています。</div>
+      </div>
+    </div>
+  </div>
+  <p style="font-size:.6rem;color:var(--t2);text-align:center;margin-top:12px;">※写真・氏名は仮のものです。実際の社員インタビューは準備中です。</p>
+</section>
+
+<!-- PRESIDENT -->
+<section id="president" class="pres">
+  <div class="stag rv">President's Message</div>
+  <h2 class="stitle rv" data-d="1">社長メッセージ</h2>
+  <div class="sdiv rv" data-d="2"></div>
+  <div class="rv" data-d="1" style="margin-top:18px;">
+    <img class="presimg" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80" alt="代表取締役社長">
+    <div class="presplate">
+      <div><div class="ppt">代表取締役社長</div><div style="font-size:.58rem;color:var(--t2);margin-top:2px;">株式会社KBM</div></div>
+      <div class="pps">Since 1968</div>
+    </div>
+  </div>
+  <div class="presq rv" data-d="2">
+    <p class="presqt">「社業を通じて人間的成長を目指す。それがKBMの変わらない信念です。」</p>
+    <p class="presqa">— 代表取締役社長</p>
+  </div>
+  <p class="prestxt rv" data-d="3">
+    私たちKBMは創業56年、北陸の建物を守り続けてきました。社員20人という小さな会社ですが、売上10億円・平均年収700万円・年間休日120日という数字が示すように、一人ひとりが誇りを持って働ける環境を作り続けています。<br><br>
+    私が大切にしているのは「人」です。社員が仕事を通じて成長し、豊かな人生を送ることが会社の発展につながると信じています。充実した福利厚生も、そのような想いから生まれたものです。<br><br>
+    北陸No.1の実績をともに育ててくれる仲間を、心よりお待ちしています。
+  </p>
+  <p style="font-size:.6rem;color:var(--t2);margin-top:12px;">※写真は仮素材です。実際の社長写真に差し替え予定。</p>
+</section>
+
+<!-- PHILOSOPHY -->
+<div class="phil">
+  <div class="philin">
+    <div class="philq rv">― 経営理念 ―</div>
+    <p class="philt rv" data-d="1">「社業を通じて<br>人間的成長を目指す」<br>建物の長期活用と<br>社会貢献を使命として。</p>
+    <p class="phils rv" data-d="2">株式会社KBM｜創業56年｜北陸No.1</p>
+  </div>
+</div>
+
+<!-- ENTRY FORM -->
+<section class="ef" id="entry">
+  <div class="stag">Entry</div>
+  <h2 class="stitle">採用エントリー</h2>
+  <div class="sdiv"></div>
+  <p class="slead">まずはお気軽にエントリーください。担当者より3営業日以内にご連絡いたします。</p>
+  <div style="margin-top:24px;">
+    <form id="eForm" onsubmit="doSub(event)">
+      <div class="fr"><div class="flb">お名前 <span class="rq">必須</span></div><input type="text" class="fi" placeholder="例：山田 太郎" required></div>
+      <div class="fr"><div class="flb">フリガナ <span class="rq">必須</span></div><input type="text" class="fi" placeholder="例：ヤマダ タロウ" required></div>
+      <div class="fr"><div class="flb">電話番号 <span class="rq">必須</span></div><input type="tel" class="fi" placeholder="例：090-0000-0000" required></div>
+      <div class="fr"><div class="flb">メールアドレス <span class="rq">必須</span></div><input type="email" class="fi" placeholder="例：example@email.com" required></div>
+      <div class="fr"><div class="flb">最終学歴 <span class="rq">必須</span></div>
+        <select class="fsel fi" required><option value="" disabled selected>選択してください</option>
+          <option>高校卒業（予定含む）</option><option>専門学校卒業（予定含む）</option>
+          <option>大学卒業（予定含む）</option><option>その他</option></select></div>
+      <div class="fr"><div class="flb">希望職種 <span class="rq">必須</span></div>
+        <select class="fsel fi" required><option value="" disabled selected>選択してください</option>
+          <option>工事部（現場監督）</option><option>営業部（ルート営業）</option>
+          <option>どちらでも可</option><option>相談したい</option></select></div>
+      <div class="fr"><div class="flb">新卒・中途</div>
+        <select class="fsel fi"><option value="" disabled selected>選択してください</option>
+          <option>新卒採用</option><option>中途採用</option></select></div>
+      <div class="fr"><div class="flb">メッセージ・ご質問</div>
+        <textarea class="fta" placeholder="気になることがあればお気軽にどうぞ。"></textarea></div>
+      <div class="fr"><label class="fchk"><input type="checkbox" required>
+        <span><a href="#" style="text-decoration:underline;">個人情報保護方針</a>に同意する</span></label></div>
+      <button type="submit" class="fsub">エントリーを送信する →</button>
+    </form>
+    <div id="fOK" style="display:none;background:var(--nv);color:var(--wh);padding:24px;text-align:center;margin-top:14px;">
+      <div style="font-size:2rem;margin-bottom:10px;">✅</div>
+      <p style="font-weight:700;margin-bottom:7px;">エントリーを受け付けました！</p>
+      <p style="font-size:.76rem;opacity:.8;">3営業日以内に担当者よりご連絡いたします。</p>
+    </div>
+    <p class="fn">※ご入力いただいた個人情報は採用選考のみに使用します。</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="ctsec" id="contact">
+  <div class="stag" style="color:var(--gd);">Contact</div>
+  <h2 class="stitle rv" data-d="1">お気軽に<br>ご相談ください</h2>
+  <div style="width:36px;height:3px;background:var(--gd);margin:14px auto 18px;" class="rv" data-d="2"></div>
+  <p class="slead rv" data-d="3">建物の劣化診断・工事のご相談・お見積りは無料です。</p>
+  <div class="ctg">
+    <a href="tel:0762421494" class="ctb cttel rv" data-d="1">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+      <span>076-242-1494</span>
+    </a>
+    <a href="mailto:info@kbmgroup.co.jp" class="ctb ctml rv" data-d="2">✉️ info@kbmgroup.co.jp</a>
+    <a href="#entry" class="ctb cten rv" data-d="3">📢 採用エントリー</a>
+  </div>
+  <p class="ctinfo rv" data-d="4">本社：石川県金沢市 / 受付時間：平日 8:00〜17:00<br>http://www.kbmgroup.co.jp</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ftl">KBM</div>
+  <div>株式会社KBM © 2024 All Rights Reserved.</div>
+  <div>創業56年 | 北陸エリア大規模修繕施工頭数No.1 | 石川県金沢市（本社）</div>
+  <div class="ftlks">
+    <a href="#about">企業情報</a><a href="#works">施工実績</a><a href="#recruit">採用情報</a>
+    <a href="#welfare">福利厚生</a><a href="#interview">社員の声</a>
+    <a href="#entry">採用エントリー</a><a href="#contact">お問い合わせ</a>
+  </div>
+</footer>
+
+<script>
+document.body.classList.add('on');
+const els=document.querySelectorAll('.rv,.rvl,.rvr');
+if('IntersectionObserver' in window){
+  const obs=new IntersectionObserver(en=>{
+    en.forEach(e=>{
+      if(e.isIntersecting){
+        const d=parseFloat(e.target.dataset.d||0);
+        setTimeout(()=>e.target.classList.add('in'),d*70);
+        obs.unobserve(e.target);
+      }
+    });
+  },{threshold:0.06,rootMargin:'0px 0px -18px 0px'});
+  els.forEach(el=>{
+    if(el.getBoundingClientRect().top<window.innerHeight) el.classList.add('in');
+    else obs.observe(el);
+  });
+}else{els.forEach(el=>el.classList.add('in'));}
+const prog=document.getElementById('prog');
+window.addEventListener('scroll',()=>{prog.style.width=(window.scrollY/(document.body.scrollHeight-window.innerHeight)*100)+'%';},{passive:true});
+const nav=document.getElementById('tnav');
+window.addEventListener('scroll',()=>{nav.style.background=window.scrollY>50?'rgba(8,21,42,1)':'rgba(8,21,42,.96)';},{passive:true});
+function doSub(e){
+  e.preventDefault();
+  document.getElementById('eForm').style.display='none';
+  document.getElementById('fOK').style.display='block';
+  window.scrollTo({top:document.getElementById('fOK').offsetTop-80,behavior:'smooth'});
+}
+</script>
+</body>
+</html>
